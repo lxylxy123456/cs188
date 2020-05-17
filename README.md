@@ -10,6 +10,10 @@ If you have GPU, you can accelerate video encoding:
 
 `make build/20200520Presentation.mp4 ARGS=--h264_nvenc`
 
+### Final draft
+
+(In progress)
+
 ### License
 
 Unless otherwise specified, the content of this repo is licensed under
