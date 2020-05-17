@@ -1,4 +1,4 @@
-## Eric Li's ECS 188 Term Project
+## Eric Li's ECS 188 Term Paper
 
 Generate presentation video:
 
