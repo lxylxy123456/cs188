@@ -1,0 +1,4273 @@
+<!--
+    This program formats lyric and display it with song and/or video. 
+    Copyright (C) 2018  lxylxy123456 <https://github.com/lxylxy123456/>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>20200508_2244 - jalrc.py</title>
+  <style>
+	.blur {
+		filter: blur(3px);
+	}
+	.absolute-pos {	/* https://stackoverflow.com/questions/10487292/ */
+		position: absolute; 
+		left: 0px; 
+		right: 0px; 
+		top: 0px; 
+		bottom: 0px; 
+	}
+	.relative-pos {
+		position: relative; 
+	}
+	.white {
+		background-color: white; 
+	}
+	h1.white {
+		background-color: #ffffffb0; 
+	}
+	.black {
+		background-color: black; 
+		color: white; 
+	}
+	h1.black {
+		/* background-color: #000000b0; */
+		background-color: #00000000; 
+	}
+	.transparent {
+		color: rgba(0,0,0,0);
+	}
+	.black.highlight {
+		background-color: blue; 
+	}
+	.white.highlight {
+		background-color: lightblue; 
+	}
+  </style>
+</head>
+<body id="body" style="overflow: hidden; ">
+  <div style="margin: -0.5em; margin-bottom: 0em; ">
+    <div>
+      <audio controls="controls" id="player">
+        <source src="20200508_2244.mp3" type="audio/mp3" />
+        Loading player encounters error
+      </audio>
+    </div>
+  </div>
+  <div id="main" style="margin: -0.5em; margin-top: 0em; " class="relative-pos">
+    <video id="video" class="absolute-pos" style="z-index: -100000; "
+           preload="none">
+      <source src="20200508_2244.mp4" type="video/mp4" />
+    </video>
+    <div id="message" style="position: absolute; right: 6em; top: 4em; 
+                             z-index: 100; text-align: right; ">
+    </div>
+    <div id="master" class="absolute-pos"
+         style="overflow-x: hidden; overflow-y: auto; top: 3em; bottom: 3em; ">
+      <div style="font-family: 'Dejavu Sans', 'Source Han Sans CN'; 
+                  text-align: center; " id="content">
+        <div id="father_h1" class="absolute-pos" offset="0">
+          <h1 style="font-size: 3.6em; " class="white" id="h1_0">
+            20200508_2244 [1]
+          </h1>
+        </div>
+        
+        <div id="father_0">
+          <div class="text-center white" id="div_1"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_1">
+              
+                <span>Hi,</span> <span>I</span> <span>am</span> <span>Eric</span> <span>Li.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_2">
+            <span id="span_2" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_1">
+          <div class="text-center white" id="div_3"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_3">
+              
+                <span>Let</span> <span>me</span> <span>show</span> <span>you</span> <span>the</span> <span>ethical</span> <span>problems</span> <span>in</span> <span>P2P</span> <span>architectures.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_4">
+            <span id="span_4" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_2">
+          <div class="text-center white" id="div_5"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_5">
+              
+                <span>Suppose</span> <span>you</span> <span>want</span> <span>to</span> <span>share</span> <span>a</span> <span>file</span> <span>with</span> <span>a</span> <span>lot</span> <span>of</span> <span>Internet</span> <span>users.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_6">
+            <span id="span_6" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_3">
+          <div class="text-center white" id="div_7"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_7">
+              
+                <span>You</span> <span>may</span> <span>need</span> <span>to</span> <span>look</span> <span>for</span> <span>file</span> <span>sharing</span> <span>applications.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_8">
+            <span id="span_8" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_4">
+          <div class="text-center white" id="div_9"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_9">
+              
+                <span>Traditionally</span> <span>this</span> <span>kind</span> <span>of</span> <span>applications</span> <span>follow</span> <span>a</span> <span>client-server</span> <span>design.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_10">
+            <span id="span_10" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_5">
+          <div class="text-center white" id="div_11"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_11">
+              
+                <span>There</span> <span>is</span> <span>one</span> <span>server</span> <span>in</span> <span>the</span> <span>network.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_12">
+            <span id="span_12" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_6">
+          <div class="text-center white" id="div_13"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_13">
+              
+                <span>Sometimes</span> <span>there</span> <span>are</span> <span>a</span> <span>few</span> <span>of</span> <span>them.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_14">
+            <span id="span_14" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_7">
+          <div class="text-center white" id="div_15"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_15">
+              
+                <span>And</span> <span>there</span> <span>are</span> <span>many</span> <span>clients</span> <span>it</span> <span>talks</span> <span>to.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_16">
+            <span id="span_16" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_8">
+          <div class="text-center white" id="div_17"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_17">
+              
+                <span>However,</span> <span>this</span> <span>structure</span> <span>has</span> <span>problems.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_18">
+            <span id="span_18" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_9">
+          <div class="text-center white" id="div_19"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_19">
+              
+                <span>If</span> <span>the</span> <span>server</span> <span>is</span> <span>down</span> <span>or</span> <span>its</span> <span>Internet</span> <span>connection</span> <span>is</span> <span>broken,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_20">
+            <span id="span_20" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_10">
+          <div class="text-center white" id="div_21"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_21">
+              
+                <span>then</span> <span>the</span> <span>entire</span> <span>service</span> <span>can't</span> <span>work</span> <span>anymore.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_22">
+            <span id="span_22" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_11">
+          <div class="text-center white" id="div_23"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_23">
+              
+                <span>This</span> <span>is</span> <span>known</span> <span>as</span> <span>single</span> <span>point</span> <span>of</span> <span>failure.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_24">
+            <span id="span_24" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_12">
+          <div class="text-center white" id="div_25"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_25">
+              
+                <span>Also,</span> <span>the</span> <span>server</span> <span>does</span> <span>not</span> <span>have</span> <span>infinite</span> <span>bandwidth.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_26">
+            <span id="span_26" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_13">
+          <div class="text-center white" id="div_27"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_27">
+              
+                <ruby><rb>Say</rb><rt style="font-size: 1em; ">Say</rt></ruby> <ruby><rb>one</rb><rt style="font-size: 1em; ">one</rt></ruby> <ruby><rb>thousand</rb><rt style="font-size: 1em; ">1000</rt></ruby> <ruby><rb>clients</rb><rt style="font-size: 1em; ">clients</rt></ruby> <ruby><rb>are</rb><rt style="font-size: 1em; ">are</rt></ruby> <ruby><rb>downloading</rb><rt style="font-size: 1em; ">downloading</rt></ruby> <ruby><rb>something</rb><rt style="font-size: 1em; ">something</rt></ruby> <ruby><rb>at</rb><rt style="font-size: 1em; ">at</rt></ruby> <ruby><rb>the</rb><rt style="font-size: 1em; ">the</rt></ruby> <ruby><rb>same</rb><rt style="font-size: 1em; ">same</rt></ruby> <ruby><rb>time,</rb><rt style="font-size: 1em; ">time,</rt></ruby> 
+              
+              
+            </span>
+          </div>
+          <div style="margin-top: 20px; 
+                    float: left; " class="zh-div" id="div_28">
+            <span id="span_28" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_14">
+          <div class="text-center white" id="div_29"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_29">
+              
+                <span>then</span> <span>the</span> <span>average</span> <span>speed</span> <span>will</span> <span>be</span> <span>slow</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_30">
+            <span id="span_30" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_15">
+          <div class="text-center white" id="div_31"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_31">
+              
+                <span>because</span> <span>the</span> <span>server</span> <span>is</span> <span>the</span> <span>bottle</span> <span>neck</span> <span>of</span> <span>the</span> <span>network.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_32">
+            <span id="span_32" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_16">
+          <div class="text-center white" id="div_33"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_33">
+              
+                <span>However,</span> <span>it</span> <span>is</span> <span>easy</span> <span>for</span> <span>application</span> <span>managers</span> <span>to</span> <span>manage</span> <span>its</span> <span>users,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_34">
+            <span id="span_34" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_17">
+          <div class="text-center white" id="div_35"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_35">
+              
+                <span>because</span> <span>all</span> <span>the</span> <span>information</span> <span>they</span> <span>need</span> <span>can</span> <span>be</span> <span>found</span> <span>in</span> <span>like</span> <span>server</span> <span>logs.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_36">
+            <span id="span_36" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_18">
+          <div class="text-center white" id="div_37"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_37">
+              
+                <span>A</span> <span>new</span> <span>network</span> <span>architecture</span> <span>for</span> <span>sharing</span> <span>is</span> <span>Peer-to-Peer.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_38">
+            <span id="span_38" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_19">
+          <div class="text-center white" id="div_39"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_39">
+              
+                <span>You</span> <span>can</span> <span>think</span> <span>of</span> <span>it</span> <span>as</span> <span>the</span> <span>clients</span> <span>in</span> <span>the</span> <span>client-server</span> <span>model</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_40">
+            <span id="span_40" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_20">
+          <div class="text-center white" id="div_41"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_41">
+              
+                <span>are</span> <span>talking</span> <span>to</span> <span>each</span> <span>others.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_42">
+            <span id="span_42" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_21">
+          <div class="text-center white" id="div_43"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_43">
+              
+                <span>There</span> <span>is</span> <span>still</span> <span>some</span> <span>kind</span> <span>of</span> <span>server</span> <span>or</span> <span>service</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_44">
+            <span id="span_44" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_22">
+          <div class="text-center white" id="div_45"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_45">
+              
+                <span>for</span> <span>peers</span> <span>to</span> <span>find</span> <span>each</span> <span>other,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_46">
+            <span id="span_46" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_23">
+          <div class="text-center white" id="div_47"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_47">
+              
+                <span>but</span> <span>the</span> <span>major</span> <span>traffic</span> <span>goes</span> <span>directly</span> <span>between</span> <span>peers.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_48">
+            <span id="span_48" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_24">
+          <div class="text-center white" id="div_49"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_49">
+              
+                <span>P2P</span> <span>solves</span> <span>the</span> <span>problem</span> <span>of</span> <span>single</span> <span>point</span> <span>of</span> <span>failure</span> <span>in</span> <span>client</span> <span>server.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_50">
+            <span id="span_50" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_25">
+          <div class="text-center white" id="div_51"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_51">
+              
+                <span>Suppose</span> <span>you</span> <span>are</span> <span>sharing</span> <span>a</span> <span>file</span> <span>with</span> <span>100</span> <span>users,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_52">
+            <span id="span_52" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_26">
+          <div class="text-center white" id="div_53"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_53">
+              
+                <span>and</span> <span>at</span> <span>some</span> <span>time</span> <span>your</span> <span>Internet</span> <span>connection</span> <span>is</span> <span>gone.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_54">
+            <span id="span_54" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_27">
+          <div class="text-center white" id="div_55"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_55">
+              
+                <span>But</span> <span>if</span> <span>you</span> <span>have</span> <span>sent</span> <span>the</span> <span>entire</span> <span>file's</span> <span>content</span> <span>out,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_56">
+            <span id="span_56" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_28">
+          <div class="text-center white" id="div_57"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_57">
+              
+                <span>to</span> <span>different</span> <span>receivers,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_58">
+            <span id="span_58" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_29">
+          <div class="text-center white" id="div_59"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_59">
+              
+                <span>then</span> <span>the</span> <span>receivers</span> <span>in</span> <span>P2P</span> <span>can</span> <span>reconstruct</span> <span>the</span> <span>original</span> <span>file.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_60">
+            <span id="span_60" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_30">
+          <div class="text-center white" id="div_61"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_61">
+              
+                <span>This</span> <span>feature</span> <span>also</span> <span>makes</span> <span>P2P</span> <span>networks</span> <span>scalable.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_62">
+            <span id="span_62" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_31">
+          <div class="text-center white" id="div_63"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_63">
+              
+                <span>This</span> <span>chart</span> <span>shows</span> <span>that</span> <span>if</span> <span>you</span> <span>need</span> <span>to</span> <span>send</span> <span>a</span> <span>file</span> <span>to</span> <span>a</span> <span>lot</span> <span>of</span> <span>users,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_64">
+            <span id="span_64" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_32">
+          <div class="text-center white" id="div_65"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_65">
+              
+                <span>P2P</span> <span>networks</span> <span>spread</span> <span>it</span> <span>much</span> <span>faster</span> <span>than</span> <span>client-server</span> <span>networks.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_66">
+            <span id="span_66" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_33">
+          <div class="text-center white" id="div_67"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_67">
+              
+                <span>Because</span> <span>the</span> <span>bottle</span> <span>neck</span> <span>on</span> <span>the</span> <span>sharer</span> <span>is</span> <span>gone.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_68">
+            <span id="span_68" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_34">
+          <div class="text-center white" id="div_69"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_69">
+              
+                <span>The</span> <span>easiness</span> <span>to</span> <span>share</span> <span>files</span> <span>in</span> <span>P2P</span> <span>creates</span> <span>copyright</span> <span>problems</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_70">
+            <span id="span_70" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_35">
+          <div class="text-center white" id="div_71"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_71">
+              
+                <span>as</span> <span>users</span> <span>share</span> <span>infringing</span> <span>content</span> <span>in</span> <span>P2P</span> <span>networks.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_72">
+            <span id="span_72" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_36">
+          <div class="text-center white" id="div_73"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_73">
+              
+                <span>A</span> <span>research</span> <span>in</span> <span>2011</span> <span>shows</span> <span>that</span> <span>11</span> <span>percent</span> <span>of</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_74">
+            <span id="span_74" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_37">
+          <div class="text-center white" id="div_75"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_75">
+              
+                <span>the</span> <span>Internet's</span> <span>traffic</span> <span>are</span> <span>infringing</span> <span>content</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_76">
+            <span id="span_76" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_38">
+          <div class="text-center white" id="div_77"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_77">
+              
+                <span>on</span> <span>a</span> <span>popular</span> <span>P2P</span> <span>network</span> <span>called</span> <span>BitTorrent.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_78">
+            <span id="span_78" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_39">
+          <div class="text-center white" id="div_79"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_79">
+              
+                <span>Research</span> <span>on</span> <span>users'</span> <span>ethical</span> <span>reasoning</span> <span>shows</span> <span>that</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_80">
+            <span id="span_80" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_40">
+          <div class="text-center white" id="div_81"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_81">
+              
+                <span>they</span> <span>usually</span> <span>realize</span> <span>that</span> <span>infringement</span> <span>over</span> <span>P2P</span> <span>is</span> <span>an</span> <span>ethical</span> <span>issue.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_82">
+            <span id="span_82" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_41">
+          <div class="text-center white" id="div_83"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_83">
+              
+                <span>However,</span> <span>they</span> <span>feel</span> <span>less</span> <span>guilty</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_84">
+            <span id="span_84" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_42">
+          <div class="text-center white" id="div_85"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_85">
+              
+                <span>if</span> <span>they</span> <span>pay</span> <span>some</span> <span>subscription</span> <span>fee</span> <span>to</span> <span>use</span> <span>the</span> <span>P2P</span> <span>system.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_86">
+            <span id="span_86" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_43">
+          <div class="text-center white" id="div_87"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_87">
+              
+                <ruby><rb>Their</rb><rt style="font-size: 1em; ">Their</rt></ruby> <ruby><rb>belief</rb><rt style="font-size: 1em; ">belief</rt></ruby> <ruby><rb>of</rb><rt style="font-size: 1em; ">of</rt></ruby> <ruby><rb>consumer</rb><rt style="font-size: 1em; ">consumer</rt></ruby> <ruby><rb>rights</rb><rt style="font-size: 1em; ">rights</rt></ruby> <ruby><rb>and</rb><rt style="font-size: 1em; ">and</rt></ruby> <ruby><rb>reciprocity</rb><rt style="font-size: 1em; ">reciProcity</rt></ruby> 
+              
+              
+            </span>
+          </div>
+          <div style="margin-top: 20px; 
+                    float: left; " class="zh-div" id="div_88">
+            <span id="span_88" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_44">
+          <div class="text-center white" id="div_89"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_89">
+              
+                <span>further</span> <span>increases</span> <span>piracy</span> <span>in</span> <span>P2P</span> <span>systems.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_90">
+            <span id="span_90" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_45">
+          <div class="text-center white" id="div_91"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_91">
+              
+                <span>When</span> <span>so</span> <span>many</span> <span>users</span> <span>share</span> <span>in</span> <span>a</span> <span>distributed</span> <span>system,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_92">
+            <span id="span_92" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_46">
+          <div class="text-center white" id="div_93"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_93">
+              
+                <span>it</span> <span>becomes</span> <span>much</span> <span>more</span> <span>difficult</span> <span>to</span> <span>stop</span> <span>them</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_94">
+            <span id="span_94" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_47">
+          <div class="text-center white" id="div_95"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_95">
+              
+                <span>than</span> <span>illegal</span> <span>sharing</span> <span>in</span> <span>client-server.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_96">
+            <span id="span_96" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_48">
+          <div class="text-center white" id="div_97"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_97">
+              
+                <span>Because</span> <span>in</span> <span>client-server</span> <span>you</span> <span>just</span> <span>need</span> <span>to</span> <span>take</span> <span>the</span> <span>server</span> <span>down.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_98">
+            <span id="span_98" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_49">
+          <div class="text-center white" id="div_99"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_99">
+              
+                <span>The</span> <span>debate</span> <span>on</span> <span>how</span> <span>to</span> <span>stop</span> <span>infringing</span> <span>over</span> <span>P2P</span> <span>is</span> <span>polarized</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_100">
+            <span id="span_100" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_50">
+          <div class="text-center white" id="div_101"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_101">
+              
+                <span>and</span> <span>has</span> <span>been</span> <span>lasting</span> <span>for</span> <span>a</span> <span>long</span> <span>time.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_102">
+            <span id="span_102" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_51">
+          <div class="text-center white" id="div_103"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_103">
+              
+                <span>People</span> <span>have</span> <span>thought</span> <span>of</span> <span>all</span> <span>kinds</span> <span>of</span> <span>ways.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_104">
+            <span id="span_104" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_52">
+          <div class="text-center white" id="div_105"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_105">
+              
+                <span>One</span> <span>way</span> <span>copyright</span> <span>holders</span> <span>came</span> <span>up</span> <span>with</span> <span>is</span> <span>to</span> <span>ban</span> <span>the</span> <span>P2P</span> <span>technology</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_106">
+            <span id="span_106" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_53">
+          <div class="text-center white" id="div_107"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_107">
+              
+                <span>because</span> <span>it</span> <span>makes</span> <span>infringing</span> <span>so</span> <span>easy.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_108">
+            <span id="span_108" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_54">
+          <div class="text-center white" id="div_109"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_109">
+              
+                <span>However,</span> <span>is</span> <span>it</span> <span>worthy</span> <span>to</span> <span>ban</span> <span>a</span> <span>technology</span> <span>just</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_110">
+            <span id="span_110" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_55">
+          <div class="text-center white" id="div_111"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_111">
+              
+                <span>because</span> <span>its</span> <span>potential</span> <span>damage</span> <span>to</span> <span>the</span> <span>copyright?</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_112">
+            <span id="span_112" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_56">
+          <div class="text-center white" id="div_113"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_113">
+              
+                <span>It</span> <span>turns</span> <span>out</span> <span>that</span> <span>similar</span> <span>cases</span> <span>have</span> <span>happened</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_114">
+            <span id="span_114" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_57">
+          <div class="text-center white" id="div_115"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_115">
+              
+                <span>when</span> <span>Sony</span> <span>sold</span> <span>a</span> <span>video</span> <span>recorder</span> <span>called</span> <span>Betamax</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_116">
+            <span id="span_116" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_58">
+          <div class="text-center white" id="div_117"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_117">
+              
+                <span>which</span> <span>can</span> <span>be</span> <span>used</span> <span>to</span> <span>pirate</span> <span>videos.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_118">
+            <span id="span_118" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_59">
+          <div class="text-center white" id="div_119"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_119">
+              
+                <span>The</span> <span>court</span> <span>decided</span> <span>that</span> <span>the</span> <span>technology</span> <span>shouldn't</span> <span>be</span> <span>banned,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_120">
+            <span id="span_120" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_60">
+          <div class="text-center white" id="div_121"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_121">
+              
+                <span>because</span> <span>it</span> <span>has</span> <span>large</span> <span>potential</span> <span>uses</span> <span>and</span> <span>commercial</span> <span>value.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_122">
+            <span id="span_122" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_61">
+          <div class="text-center white" id="div_123"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_123">
+              
+                <span>However,</span> <span>it</span> <span>doesn't</span> <span>mean</span> <span>that</span> <span>Sony</span> <span>can</span> <span>misbehave</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_124">
+            <span id="span_124" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_62">
+          <div class="text-center white" id="div_125"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_125">
+              
+                <span>like</span> <span>by</span> <span>advertising</span> <span>about</span> <span>the</span> <span>potential</span> <span>infringing</span> <span>use.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_126">
+            <span id="span_126" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_63">
+          <div class="text-center white" id="div_127"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_127">
+              
+                <span>Later</span> <span>this</span> <span>is</span> <span>known</span> <span>as</span> <span>the</span> <span>Sony</span> <span>doctrine.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_128">
+            <span id="span_128" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_64">
+          <div class="text-center white" id="div_129"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_129">
+              
+                <span>Applying</span> <span>this</span> <span>analysis,</span> <span>the</span> <span>P2P</span> <span>technology</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_130">
+            <span id="span_130" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_65">
+          <div class="text-center white" id="div_131"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_131">
+              
+                <span>also</span> <span>shouldn't</span> <span>be</span> <span>banned</span> <span>because</span> <span>it</span> <span>has</span> <span>powerful</span> <span>non-infringing</span> <span>uses.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_132">
+            <span id="span_132" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_66">
+          <div class="text-center white" id="div_133"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_133">
+              
+                <span>People</span> <span>have</span> <span>also</span> <span>proposed</span> <span>other</span> <span>ways.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_134">
+            <span id="span_134" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_67">
+          <div class="text-center white" id="div_135"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_135">
+              
+                <span>Some</span> <span>people</span> <span>think</span> <span>there</span> <span>should</span> <span>be</span> <span>harsh</span> <span>penalties</span> <span>for</span> <span>pirates</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_136">
+            <span id="span_136" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_68">
+          <div class="text-center white" id="div_137"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_137">
+              
+                <span>like</span> <span>cutting</span> <span>the</span> <span>Internet</span> <span>service.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_138">
+            <span id="span_138" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_69">
+          <div class="text-center white" id="div_139"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_139">
+              
+                <span>They</span> <span>are</span> <span>kind</span> <span>of</span> <span>more</span> <span>on</span> <span>the</span> <span>copyright</span> <span>holder's</span> <span>side.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_140">
+            <span id="span_140" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_70">
+          <div class="text-center white" id="div_141"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_141">
+              
+                <span>Some</span> <span>psychological</span> <span>researchers</span> <span>think</span> <span>we</span> <span>should</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_142">
+            <span id="span_142" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_71">
+          <div class="text-center white" id="div_143"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_143">
+              
+                <span>educate</span> <span>the</span> <span>customers</span> <span>about</span> <span>the</span> <span>harm</span> <span>of</span> <span>infringement.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_144">
+            <span id="span_144" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_72">
+          <div class="text-center white" id="div_145"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_145">
+              
+                <span>They</span> <span>also</span> <span>propose</span> <span>that</span> <span>copyright</span> <span>holders</span> <span>should</span> <span>make</span> <span>use</span> <span>of</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_146">
+            <span id="span_146" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_73">
+          <div class="text-center white" id="div_147"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_147">
+              
+                <span>the</span> <span>new</span> <span>model</span> <span>proposed</span> <span>by</span> <span>P2P</span> <span>and</span> <span>change</span> <span>their</span> <span>business</span> <span>model.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_148">
+            <span id="span_148" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_74">
+          <div class="text-center white" id="div_149"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_149">
+              
+                <span>Letting</span> <span>copyright</span> <span>holders</span> <span>to</span> <span>change</span> <span>and</span> <span>integrate</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_150">
+            <span id="span_150" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_75">
+          <div class="text-center white" id="div_151"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_151">
+              
+                <span>into</span> <span>the</span> <span>P2P</span> <span>sharing</span> <span>nature</span> <span>seems</span> <span>unrealistic</span> <span>in</span> <span>short</span> <span>term.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_152">
+            <span id="span_152" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_76">
+          <div class="text-center white" id="div_153"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_153">
+              
+                <span>So</span> <span>they</span> <span>chose</span> <span>to</span> <span>monitor</span> <span>users.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_154">
+            <span id="span_154" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_77">
+          <div class="text-center white" id="div_155"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_155">
+              
+                <span>Actually</span> <span>it</span> <span>turns</span> <span>out</span> <span>that</span> <span>monitoring</span> <span>users</span> <span>in</span> <span>P2P</span> <span>network</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_156">
+            <span id="span_156" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_78">
+          <div class="text-center white" id="div_157"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_157">
+              
+                <span>is</span> <span>in</span> <span>some</span> <span>sense</span> <span>even</span> <span>easier</span> <span>than</span> <span>in</span> <span>client-server</span> <span>networks.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_158">
+            <span id="span_158" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_79">
+          <div class="text-center white" id="div_159"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_159">
+              
+                <span>A</span> <span>paper</span> <span>in</span> <span>2010</span> <span>shows</span> <span>that</span> <span>if</span> <span>you</span> <span>crawl</span> <span>the</span> <span>distributed</span> <span>hash</span> <span>table,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_160">
+            <span id="span_160" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_80">
+          <div class="text-center white" id="div_161"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_161">
+              
+                <span>which</span> <span>is</span> <span>a</span> <span>data</span> <span>structure</span> <span>in</span> <span>P2P</span> <span>networks,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_162">
+            <span id="span_162" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_81">
+          <div class="text-center white" id="div_163"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_163">
+              
+                <span>you</span> <span>can</span> <span>track</span> <span>nearly</span> <span>8</span> <span>million</span> <span>IP</span> <span>addresses.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_164">
+            <span id="span_164" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_82">
+          <div class="text-center white" id="div_165"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_165">
+              
+                <span>With</span> <span>these</span> <span>IP</span> <span>addresses,</span> <span>copyright</span> <span>holders</span> <span>can</span> <span>map</span> <span>them</span> <span>to</span> <span>users.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_166">
+            <span id="span_166" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_83">
+          <div class="text-center white" id="div_167"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_167">
+              
+                <span>This</span> <span>is</span> <span>ironic</span> <span>when</span> <span>considering</span> <span>the</span> <span>original</span> <span>design</span> <span>of</span> <span>P2P,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_168">
+            <span id="span_168" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_84">
+          <div class="text-center white" id="div_169"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_169">
+              
+                <ruby><rb>which</rb><rt style="font-size: 1em; ">which</rt></ruby> <ruby><rb>values</rb><rt style="font-size: 1em; ">values</rt></ruby> <ruby><rb>users'</rb><rt style="font-size: 1em; ">users'</rt></ruby> <ruby><rb>anonymity</rb><rt style="font-size: 1em; ">anoNimity</rt></ruby> <ruby><rb>and</rb><rt style="font-size: 1em; ">and</rt></ruby> <ruby><rb>freedom</rb><rt style="font-size: 1em; ">freedom</rt></ruby> <ruby><rb>in</rb><rt style="font-size: 1em; ">in</rt></ruby> <ruby><rb>the</rb><rt style="font-size: 1em; ">the</rt></ruby> <ruby><rb>network.</rb><rt style="font-size: 1em; ">network.</rt></ruby> 
+              
+              
+            </span>
+          </div>
+          <div style="margin-top: 20px; 
+                    float: left; " class="zh-div" id="div_170">
+            <span id="span_170" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_85">
+          <div class="text-center white" id="div_171"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_171">
+              
+                <span>Other</span> <span>research</span> <span>shows</span> <span>that</span> <span>the</span> <span>government</span> <span>and</span> <span>copyright</span> <span>holders</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_172">
+            <span id="span_172" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_86">
+          <div class="text-center white" id="div_173"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_173">
+              
+                <span>are</span> <span>really</span> <span>tracking</span> <span>P2P</span> <span>users.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_174">
+            <span id="span_174" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_87">
+          <div class="text-center white" id="div_175"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_175">
+              
+                <span>Well,</span> <span>actually</span> <span>not</span> <span>copyright</span> <span>holders,</span> <span>but</span> <span>organizations</span> <span>like</span> <span>RIAA</span> <span>or</span> <span>MPAA.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_176">
+            <span id="span_176" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_88">
+          <div class="text-center white" id="div_177"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_177">
+              
+                <span>They</span> <span>create</span> <span>fake</span> <span>users</span> <span>on</span> <span>P2P</span> <span>networks</span> <span>to</span> <span>track</span> <span>other</span> <span>users.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_178">
+            <span id="span_178" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_89">
+          <div class="text-center white" id="div_179"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_179">
+              
+                <span>The</span> <span>introduction</span> <span>of</span> <span>P2P</span> <span>also</span> <span>brings</span> <span>two</span> <span>kinds</span> <span>of</span> <span>troubles</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_180">
+            <span id="span_180" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_90">
+          <div class="text-center white" id="div_181"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_181">
+              
+                <span>to</span> <span>Internet</span> <span>Service</span> <span>Providers.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_182">
+            <span id="span_182" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_91">
+          <div class="text-center white" id="div_183"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_183">
+              
+                <span>The</span> <span>direct</span> <span>effect</span> <span>comes</span> <span>from</span> <span>the</span> <span>asymmetric</span> <span>bandwidth.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_184">
+            <span id="span_184" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_92">
+          <div class="text-center white" id="div_185"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_185">
+              
+                <span>In</span> <span>a</span> <span>client-server</span> <span>model,</span> <span>users</span> <span>usually</span> <span>download</span> <span>more</span> <span>than</span> <span>upload.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_186">
+            <span id="span_186" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_93">
+          <div class="text-center white" id="div_187"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_187">
+              
+                <span>So</span> <span>ISPs</span> <span>optimize</span> <span>their</span> <span>network</span> <span>and</span> <span>make</span> <span>download</span> <span>bandwidth</span> <span>larger.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_188">
+            <span id="span_188" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_94">
+          <div class="text-center white" id="div_189"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_189">
+              
+                <span>But</span> <span>P2P</span> <span>users</span> <span>usually</span> <span>acquire</span> <span>same</span> <span>download</span> <span>and</span> <span>upload</span> <span>bandwidth,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_190">
+            <span id="span_190" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_95">
+          <div class="text-center white" id="div_191"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_191">
+              
+                <span>which</span> <span>isn't</span> <span>friendly</span> <span>to</span> <span>ISPs'</span> <span>configuration.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_192">
+            <span id="span_192" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_96">
+          <div class="text-center white" id="div_193"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_193">
+              
+                <span>The</span> <span>indirect</span> <span>effect</span> <span>comes</span> <span>from</span> <span>the</span> <span>Digital</span> <span>Millennium</span> <span>Copyright</span> <span>Act.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_194">
+            <span id="span_194" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_97">
+          <div class="text-center white" id="div_195"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_195">
+              
+                <span>When</span> <span>copyright</span> <span>owners</span> <span>find</span> <span>infringing</span> <span>activities</span> <span>on</span> <span>an</span> <span>ISP's</span> <span>network,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_196">
+            <span id="span_196" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_98">
+          <div class="text-center white" id="div_197"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_197">
+              
+                <span>they</span> <span>can</span> <span>notify</span> <span>the</span> <span>ISP.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_198">
+            <span id="span_198" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_99">
+          <div class="text-center white" id="div_199"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_199">
+              
+                <span>The</span> <span>ISP</span> <span>has</span> <span>to</span> <span>take</span> <span>down</span> <span>the</span> <span>illegal</span> <span>content</span> <span>quickly,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_200">
+            <span id="span_200" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_100">
+          <div class="text-center white" id="div_201"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_201">
+              
+                <span>or</span> <span>it</span> <span>may</span> <span>suffer</span> <span>secondary</span> <span>liability</span> <span>of</span> <span>the</span> <span>infringement.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_202">
+            <span id="span_202" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_101">
+          <div class="text-center white" id="div_203"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_203">
+              
+                <span>That</span> <span>means,</span> <span>ISPs</span> <span>have</span> <span>to</span> <span>invest</span> <span>time</span> <span>and</span> <span>money</span> <span>on</span> <span>responding</span> <span>to</span> <span>the</span> <span>notices.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_204">
+            <span id="span_204" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_102">
+          <div class="text-center white" id="div_205"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_205">
+              
+                <span>But</span> <span>if</span> <span>you</span> <span>think</span> <span>about</span> <span>it,</span> <span>they</span> <span>have</span> <span>no</span> <span>control</span> <span>to</span> <span>the</span> <span>P2P</span> <span>technology,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_206">
+            <span id="span_206" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_103">
+          <div class="text-center white" id="div_207"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_207">
+              
+                <span>and</span> <span>their</span> <span>customer's</span> <span>use</span> <span>of</span> <span>this</span> <span>technology</span> <span>brings</span> <span>them</span> <span>trouble.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_208">
+            <span id="span_208" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_104">
+          <div class="text-center white" id="div_209"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_209">
+              
+                <span>This</span> <span>becomes</span> <span>more</span> <span>troublesome</span> <span>for</span> <span>universities,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_210">
+            <span id="span_210" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_105">
+          <div class="text-center white" id="div_211"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_211">
+              
+                <span>because</span> <span>universities</span> <span>act</span> <span>as</span> <span>ISPs</span> <span>for</span> <span>their</span> <span>students,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_212">
+            <span id="span_212" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_106">
+          <div class="text-center white" id="div_213"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_213">
+              
+                <span>and</span> <span>they</span> <span>are</span> <span>responsible</span> <span>for</span> <span>students'</span> <span>conduct.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_214">
+            <span id="span_214" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_107">
+          <div class="text-center white" id="div_215"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_215">
+              
+                <span>The</span> <span>law</span> <span>requires</span> <span>universities</span> <span>to</span> <span>notify</span> <span>students</span> <span>about</span> <span>this.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_216">
+            <span id="span_216" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_108">
+          <div class="text-center white" id="div_217"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_217">
+              
+                <span>For</span> <span>example,</span> <span>this</span> <span>is</span> <span>the</span> <span>announcement</span> <span>by</span> <span>UC</span> <span>Davis.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_218">
+            <span id="span_218" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_109">
+          <div class="text-center white" id="div_219"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_219">
+              
+                <span>Some</span> <span>users</span> <span>may</span> <span>be</span> <span>leeching,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_220">
+            <span id="span_220" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_110">
+          <div class="text-center white" id="div_221"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_221">
+              
+                <span>which</span> <span>means</span> <span>downloading</span> <span>from</span> <span>the</span> <span>P2P</span> <span>network</span> <span>without</span> <span>uploading.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_222">
+            <span id="span_222" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_111">
+          <div class="text-center white" id="div_223"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_223">
+              
+                <span>Some</span> <span>users</span> <span>do</span> <span>this</span> <span>in</span> <span>order</span> <span>to</span> <span>save</span> <span>their</span> <span>uploading</span> <span>bandwidth.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_224">
+            <span id="span_224" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_112">
+          <div class="text-center white" id="div_225"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_225">
+              
+                <span>This</span> <span>behavior</span> <span>is</span> <span>considered</span> <span>unethical</span> <span>by</span> <span>the</span> <span>community</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_226">
+            <span id="span_226" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_113">
+          <div class="text-center white" id="div_227"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_227">
+              
+                <ruby><rb>because</rb><rt style="font-size: 1em; ">because</rt></ruby> <ruby><rb>it</rb><rt style="font-size: 1em; ">it</rt></ruby> <ruby><rb>contradicts</rb><rt style="font-size: 1em; ">contradicts</rt></ruby> <ruby><rb>the</rb><rt style="font-size: 1em; ">the</rt></ruby> <ruby><rb>concept</rb><rt style="font-size: 1em; ">concept</rt></ruby> <ruby><rb>of</rb><rt style="font-size: 1em; ">of</rt></ruby> <ruby><rb>reciprocity</rb><rt style="font-size: 1em; ">reciProcity</rt></ruby> <ruby><rb>in</rb><rt style="font-size: 1em; ">in</rt></ruby> <ruby><rb>P2P.</rb><rt style="font-size: 1em; ">P2P.</rt></ruby> 
+              
+              
+            </span>
+          </div>
+          <div style="margin-top: 20px; 
+                    float: left; " class="zh-div" id="div_228">
+            <span id="span_228" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_114">
+          <div class="text-center white" id="div_229"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_229">
+              
+                <span>If</span> <span>no</span> <span>one</span> <span>is</span> <span>willing</span> <span>to</span> <span>upload</span> <span>the</span> <span>content</span> <span>to</span> <span>the</span> <span>network,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_230">
+            <span id="span_230" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_115">
+          <div class="text-center white" id="div_231"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_231">
+              
+                <span>then</span> <span>P2P</span> <span>is</span> <span>in</span> <span>no</span> <span>way</span> <span>better</span> <span>than</span> <span>client</span> <span>server.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_232">
+            <span id="span_232" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_116">
+          <div class="text-center white" id="div_233"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_233">
+              
+                <span>However,</span> <span>another</span> <span>possible</span> <span>motivation</span> <span>is</span> <span>to</span> <span>prevent</span> <span>DMCA</span> <span>liability.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_234">
+            <span id="span_234" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_117">
+          <div class="text-center white" id="div_235"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_235">
+              
+                <span>Users</span> <span>get</span> <span>in</span> <span>trouble</span> <span>with</span> <span>DMCA</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_236">
+            <span id="span_236" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_118">
+          <div class="text-center white" id="div_237"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_237">
+              
+                <span>because</span> <span>they</span> <span>upload</span> <span>the</span> <span>pirated</span> <span>content</span> <span>to</span> <span>the</span> <span>network.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_238">
+            <span id="span_238" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_119">
+          <div class="text-center white" id="div_239"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_239">
+              
+                <span>If</span> <span>they</span> <span>only</span> <span>download</span> <span>the</span> <span>content,</span> <span>there</span> <span>will</span> <span>be</span> <span>no</span> <span>problems.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_240">
+            <span id="span_240" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_120">
+          <div class="text-center white" id="div_241"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_241">
+              
+                <span>So</span> <span>users</span> <span>have</span> <span>to</span> <span>make</span> <span>a</span> <span>decision</span> <span>between</span> <span>ethics</span> <span>and</span> <span>the</span> <span>law.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_242">
+            <span id="span_242" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_121">
+          <div class="text-center white" id="div_243"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_243">
+              
+                <span>Though</span> <span>most</span> <span>P2P</span> <span>networks</span> <span>have</span> <span>an</span> <span>open</span> <span>design,</span> <span>Xunlei</span> <span>follows</span> <span>a</span> <span>different</span> <span>way.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_244">
+            <span id="span_244" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_122">
+          <div class="text-center white" id="div_245"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_245">
+              
+                <span>Xunlei</span> <span>is</span> <span>a</span> <span>P2P</span> <span>client</span> <span>designed</span> <span>by</span> <span>a</span> <span>Chinese</span> <span>company.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_246">
+            <span id="span_246" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_123">
+          <div class="text-center white" id="div_247"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_247">
+              
+                <ruby><rb>It</rb><rt style="font-size: 1em; ">It</rt></ruby> <ruby><rb>uses</rb><rt style="font-size: 1em; ">uses</rt></ruby> <ruby><rb>a</rb><rt style="font-size: 1em; ">a</rt></ruby> <ruby><rb>proprietary</rb><rt style="font-size: 1em; ">proPrietary</rt></ruby> <ruby><rb>network</rb><rt style="font-size: 1em; ">network</rt></ruby> <ruby><rb>that</rb><rt style="font-size: 1em; ">that</rt></ruby> <ruby><rb>has</rb><rt style="font-size: 1em; ">has</rt></ruby> <ruby><rb>centralized</rb><rt style="font-size: 1em; ">centralized</rt></ruby> <ruby><rb>control,</rb><rt style="font-size: 1em; ">control,</rt></ruby> 
+              
+              
+            </span>
+          </div>
+          <div style="margin-top: 20px; 
+                    float: left; " class="zh-div" id="div_248">
+            <span id="span_248" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_124">
+          <div class="text-center white" id="div_249"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_249">
+              
+                <span>which</span> <span>is</span> <span>usually</span> <span>avoided</span> <span>in</span> <span>P2P</span> <span>network</span> <span>design.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_250">
+            <span id="span_250" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_125">
+          <div class="text-center white" id="div_251"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_251">
+              
+                <span>Research</span> <span>shows</span> <span>that</span> <span>it</span> <span>may</span> <span>be</span> <span>good</span> <span>for</span> <span>piracy</span> <span>control,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_252">
+            <span id="span_252" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_126">
+          <div class="text-center white" id="div_253"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_253">
+              
+                <span>but</span> <span>can</span> <span>harm</span> <span>users'</span> <span>privacy</span> <span>with</span> <span>over</span> <span>surveillance.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_254">
+            <span id="span_254" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_127">
+          <div class="text-center white" id="div_255"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_255">
+              
+                <span>Xunlei</span> <span>also</span> <span>uses</span> <span>a</span> <span>weak</span> <span>encryption</span> <span>mechanism,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_256">
+            <span id="span_256" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_128">
+          <div class="text-center white" id="div_257"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_257">
+              
+                <span>which</span> <span>may</span> <span>allow</span> <span>hackers</span> <span>to</span> <span>track</span> <span>users'</span> <span>activities.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_258">
+            <span id="span_258" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_129">
+          <div class="text-center white" id="div_259"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_259">
+              
+                <span>People</span> <span>also</span> <span>find</span> <span>that</span> <span>Xunlei's</span> <span>network</span> <span>is</span> <span>trying</span> <span>to</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_260">
+            <span id="span_260" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_130">
+          <div class="text-center white" id="div_261"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_261">
+              
+                <span>encapsulate</span> <span>other</span> <span>open</span> <span>P2P</span> <span>networks,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_262">
+            <span id="span_262" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_131">
+          <div class="text-center white" id="div_263"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_263">
+              
+                <span>which</span> <span>becomes</span> <span>an</span> <span>ethical</span> <span>question</span> <span>because</span> <span>Xunlei</span> <span>can</span> <span>benefit</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_264">
+            <span id="span_264" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_132">
+          <div class="text-center white" id="div_265"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_265">
+              
+                <span>from</span> <span>just</span> <span>proxying</span> <span>the</span> <span>other</span> <span>networks.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_266">
+            <span id="span_266" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_133">
+          <div class="text-center white" id="div_267"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_267">
+              
+                <span>There</span> <span>are</span> <span>a</span> <span>lot</span> <span>more</span> <span>ethical</span> <span>problems</span> <span>created</span> <span>by</span> <span>P2P</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_268">
+            <span id="span_268" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_134">
+          <div class="text-center white" id="div_269"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_269">
+              
+                <span>that</span> <span>can't</span> <span>be</span> <span>discussed</span> <span>in</span> <span>this</span> <span>10-minute</span> <span>presentation.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_270">
+            <span id="span_270" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_135">
+          <div class="text-center white" id="div_271"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_271">
+              
+                <span>For</span> <span>example,</span> <span>P2P</span> <span>networks</span> <span>can</span> <span>easily</span> <span>spread</span> <span>virus,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_272">
+            <span id="span_272" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_136">
+          <div class="text-center white" id="div_273"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_273">
+              
+                <span>because</span> <span>everyone</span> <span>can</span> <span>share</span> <span>anything.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_274">
+            <span id="span_274" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_137">
+          <div class="text-center white" id="div_275"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_275">
+              
+                <span>Also,</span> <span>Microsoft</span> <span>Windows</span> <span>10</span> <span>turns</span> <span>on</span> <span>its</span> <span>P2P</span> <span>service</span> <span>updates</span> <span>by</span> <span>default,</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_276">
+            <span id="span_276" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_138">
+          <div class="text-center white" id="div_277"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_277">
+              
+                <span>which</span> <span>create</span> <span>problem</span> <span>for</span> <span>local</span> <span>area</span> <span>network</span> <span>managers.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_278">
+            <span id="span_278" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_139">
+          <div class="text-center white" id="div_279"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_279">
+              
+                <span>Thank</span> <span>you.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_280">
+            <span id="span_280" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="father_140">
+          <div class="text-center white" id="div_281"
+               style="float: left; font-size: 1.8em; text-align: center; ">
+            <span id="span_281">
+              
+                <span>Here</span> <span>are</span> <span>the</span> <span>references</span> <span>for</span> <span>my</span> <span>paper</span> <span>and</span> <span>images</span> <span>used</span> <span>in</span> <span>this</span> <span>presentation.</span> 
+              
+              
+            </span>
+          </div>
+          <div style="
+                    float: left; " class="zh-div" id="div_282">
+            <span id="span_282" class="white"
+                  style="font-size: 1.8em; ">
+              
+            </span>
+          </div>
+          <div style="clear: both; "></div>
+        </div>
+        
+        <div id="footer" class="absolute-pos" style="height: 1px; width: 1px">
+        </div>
+     </div>
+   </div>
+  </div>
+  <script style="text/javascript">
+	// "use strict";
+	var lyric_fix = true;
+	var lyric_transparent = true;
+	var font_size = window.screen.width * 3 / 3200; 
+	var global_vertical = 0; 
+	var command_list = []; 
+	var coloring_param = [75, 50, 	// 背景外圈 (变白, 变黑)
+						75, 50, 	// 背景内圈 (变白, 变黑)
+						75, 50];	// 文字内圈 (变白, 变黑)
+	var coloring_white = [255, 255, 255]; 
+	var coloring_mode = 0; 
+	; 
+	
+		function color_lightness(rgb) {
+		// https://docs.gimp.org/2.8/zh_CN/gimp-tool-desaturate.html
+		return parseInt((Math.max.apply(null, rgb) + 
+						 Math.min.apply(null, rgb)) / 2); 
+	}
+	function color_luminosity(rgb) {
+		// 同上 & https://en.wikipedia.org/wiki/Relative_luminance
+		return parseInt(0.21 * rgb[0] + 0.72 * rgb[1] + 0.07 * rgb[2]); 
+		// return 0.21 * R + 0.72 * G + 0.07 * B; 
+	}
+	function color_average(rgb) {
+		// 同上上
+		return parseInt((rgb[0] + rgb[1] + rgb[2]) / 3); 
+	}
+	function get_close(src, tgt, index) {
+		if (src == src) {	// function disabled
+			src[index] = tgt[index]; 
+			return; 
+		}
+		diff = src[index] - tgt[index]; 
+		if (diff[index] > coloring_speed) {
+			tgt[index] = src[index] - coloring_speed; 
+		}
+		else if (diff[index] >= -coloring_speed) {
+			tgt[index] = src[index]; 
+		}
+		else {
+			tgt[index] = src[index] + coloring_speed; 
+		}
+	}
+	function get_thumbnail() {
+		ctx.drawImage(gebi('video'), 0, 0, canvas_width, canvas_height); 
+		return ctx.getImageData(0, 0, canvas_width, canvas_height).data; 
+	}
+	function get_colors(data) {
+		rgb = [
+			[0, 0, 0], // [       0 , r(0, 36)] & [      63 , r( 0, 36)]
+			[0, 0, 0], // [r( 1,  6), r(0, 36)] & [r(58, 63), r( 0, 36)]
+					//  & [r( 6, 58), r(0,  4)] & [r( 6, 58), r(32, 36)]
+			[0, 0, 0], // [r( 6, 58), r(4, 32)]
+		]; 
+		weight = [0, 0, 0]; 
+		sample_num = canvas_height * 2
+		for (var i = 0; i < canvas_height; i += 1) {
+			for (var j = 0; j < canvas_width; j += 1) {
+				if (j == 0 || j == 63) {
+					target = 0; 
+				}
+				else if (j < 6 || j >= 58) {
+					target = 1; 
+				}
+				else if (i < 4 || i >= 32) {
+					target = 1; 
+				}
+				else {
+					target = 2; 
+				}
+				offset = 4 * (i * canvas_width + j); 
+				weight[target] += 1; 
+				for (k = 0; k < 3; k += 1){
+					rgb[target][k] += data[offset + k]; 
+				}
+			}
+		}
+		for (var i = 0; i < weight.length; i += 1) {
+			for (j = 0; j < 3; j += 1){
+				rgb[i][j] = parseInt(rgb[i][j] / weight[i]); 
+			}
+		}
+		return rgb; 
+	}
+	function color_distance_square(c1, c2) {
+		sum = 0; 
+		for (var k = 0; k < 3; k += 1) {
+			d = c1[0] - c2[0]; 
+			sum += d * d; 
+		}
+		return sum
+	}
+	function color_lte(c1, o1, c2, o2) {
+		// for all entries, c1[o1:] <= c2[o2:]
+		for (var k = 0; k < 3; k += 1) {
+			if (!(c1[k + o1] <= c2[k + o2])) {
+				return false; 
+			}
+		}
+		return true; 
+	}
+	function background_coloring_calc(prev, rgbs) {
+		// prev: 目前的背景情况; rgbs: 颜色数据
+		l_list = []; 
+		for (var i = 0; i < rgbs.length; i += 1) {
+			l_list[i] = color_luminosity(rgbs[i]); 
+		}
+		if (command_list.includes('no_background_coloring')) {
+			return coloring_white; 
+		}
+		if (prev[0] == 0) {
+			limit1 = coloring_param[0]; 
+			limit2 = coloring_param[2]; 
+		}
+		else {
+			limit1 = coloring_param[1]; 
+			limit2 = coloring_param[3]; 
+		}
+		if (l_list[0] < 10 || l_list[1] < limit1 || l_list[2] < limit2) {
+			return [0, 0, 0]; 
+		}
+		else {
+			return coloring_white; 
+		}
+	}
+	function characters_coloring_calc(prev, rgbs) {
+		// prev: 目前的文字情况; rgbs: 颜色数据
+		if (command_list.includes('no_characters_coloring')) {
+			return 1; 
+		}
+		limit = prev ? coloring_param[5] : coloring_param[4]; 
+		return (color_luminosity(rgbs[2]) < limit) ? 0 : 1; 
+	}
+	function coloring_set_cache(currentTime, ans) {
+		if (!command_list.includes('fix_coloring_cache')) {
+			cache_data('#%' + currentTime + ',' + JSON.stringify(ans)); 
+		}
+	}
+	function traditional_coloring(thumbnail, prev_bgr, prev_fnt) {
+		rgbs = get_colors(thumbnail); 
+		return [background_coloring_calc(prev_bgr, rgbs), 
+				characters_coloring_calc(prev_fnt, rgbs)]; 
+	}
+	function point_coloring(thumbnail, prev_bgr, prev_fnt) {
+		// constant needed: coloring_pos, coloring_distance_constant
+		// 通过 coloring_pos 指定一个固定点进行 coloring
+		rgbs = get_colors(thumbnail); 
+		offset = 4 * (coloring_pos[1] * canvas_width + coloring_pos[0])
+		ans = [0, 0, 0]
+		for (var k = 0; k < 3; k += 1) {
+			ans[k] = thumbnail[offset + k]; 
+		}
+		if (color_distance_square(ans, prev_bgr) < coloring_distance_constant) {
+			ans = prev_bgr; 
+		}
+		return [ans, characters_coloring_calc(prev_fnt, rgbs)]; 
+	}
+	function fetch_white_coloring(thumbnail, prev_bgr, prev_fnt) {
+		// constant needed: coloring_l, coloring_least_sample, coloring_u,
+		// 					coloring_distance_constant
+		// 通过 coloring_l 和 coloring_u 选取阈值内的颜色进行平均
+		rgbs = get_colors(thumbnail); 
+		sum = [0, 0, 0]
+		avg = [0, 0, 0]
+		count = 0; 
+		for (var i = 0; i < canvas_height; i += 1) {
+			for (var j = 0; j < canvas_width; j += 1) {
+				offset = 4 * (i * canvas_width + j); 
+				if (color_lte(coloring_l, 0, thumbnail, offset) && 
+					color_lte(thumbnail, offset, coloring_u, 0)) {
+					for (var k = 0; k < 3; k += 1) {
+						sum[k] += thumbnail[offset + k]; 
+					}
+					count += 1; 
+				}
+			}
+		}
+		if (count < coloring_least_sample) {
+			ans = traditional_coloring(thumbnail, prev_bgr, prev_fnt)[0]; 
+		}
+		else {
+			for (var k = 0; k < 3; k += 1) {
+				avg[k] = parseInt(sum[k] / count); 
+			}
+			ans = avg; 
+		}
+		if (color_distance_square(ans, prev_bgr) < coloring_distance_constant) {
+			ans = prev_bgr; 
+		}
+		add_message(ans + '|' + count); 
+		return [ans, characters_coloring_calc(prev_fnt, rgbs)]; 
+	}
+
+
+		// video playing
+	function sync_video(offset) {
+		if (!offset) {
+			offset = 0
+		}
+		if (video_enabled)
+			gebi('video').currentTime = gebi('player').currentTime + offset; 
+	}
+	function player_onplay(){
+		if (video_enabled) {
+			gebi('video').play(); 
+			sync_video(); 
+		}
+	}
+	function player_onpause(){
+		if (video_enabled) {
+			gebi('video').pause(); 
+			send_data(''); 
+		}
+		if (gebi('player').ended) {
+			setTimeout(auto_play, 3000); 
+		}
+	}
+	function player_onratechange(){
+		if (video_enabled)
+			gebi('video').playbackRate = gebi('player').playbackRate; 
+		sync_video(); 
+	}
+	function player_onseeked(){
+		// do not use timeupdate, because it refreshes for nearly every frame
+		sync_video(); 
+	}
+	// 信息
+	function add_message(content) {
+		var node_id = new Date().getTime(); 
+		var node = "<p style='background-color: #ffffff40' id='"
+		node += node_id + "'>" + content + "</p>"; 
+		gebi('message').innerHTML = node + gebi('message').innerHTML; 
+		setTimeout(function (){
+			gebi(node_id).remove(); 
+		}, 1000)
+	}
+	function clear_message() {
+		gebi('message').innerHTML = ''; 
+	}
+	// 手动跟随歌词
+	function get_info_path() {
+		path = decodeURIComponent(window.location.pathname); 
+		path_new = ''; 
+		for (var i = 0; i < path.length - 5; i += 1) {
+			path_new += path[i] == '\'' ? '\'\\\'\'' : path[i]; 
+		}
+		return '~/Musics\'' + path_new + '.info\''
+	}
+	function highlight_target() {	// 找到 current_tag 应该使用的高亮位置
+		if (!current_tag)
+			return gebi('h1_0'); 
+		if (current_tag % 2)
+			return gebi('div_' + current_tag); 
+		else
+			return gebi('span_' + current_tag); 
+	}
+	function previous_tag() {
+		highlight_target() && highlight_target().classList.remove('highlight'); 
+		current_tag -= 1; 
+		highlight_target() && highlight_target().classList.add('highlight'); 
+	}
+	function update_tag() {
+		time_record[current_tag] = gebi('player').currentTime; 
+		highlight_target() && highlight_target().classList.remove('highlight'); 
+		current_tag += 1; 
+		highlight_target() && highlight_target().classList.add('highlight'); 
+		if (! highlight_target()) {
+			data = '#,' + time_record.toString(); 
+			var node = '<p style="word-break: break-all; margin-left: 6em;' +
+						'background-color: lightblue; padding: 2em; ">g ' + 
+						get_info_path() + '<br /><br />' + data + '</p>'; 
+			gebi('message').innerHTML = node + gebi('message').innerHTML; 
+			if (confirm('发送数据？\n' + data)) {
+				send_data(data); 
+			}
+		}
+	}
+	function print_info() {
+		var node = '<p style="word-break: break-all; margin-left: 6em;' +
+						'background-color: lightblue; padding: 2em; ">g ' + 
+						get_info_path() + '</p>'; 
+		gebi('message').innerHTML = node + gebi('message').innerHTML; 
+	}
+	// 播放进度
+	function pad_zero(value) {
+		var v = parseInt(value); 
+		if (v < 10) {
+			return '0' + v; 
+		}
+		else {
+			return v.toString(); 
+		}
+	}
+	function int2time(value) {	// 73.12 -> 01:13
+		return pad_zero(value / 60) + ':' + pad_zero(value % 60); 
+	}
+	function posfwd(value) {
+		gebi('player').currentTime += value; 
+		add_message(int2time(gebi('player').currentTime) + '/' + 
+					int2time(gebi('player').duration)); 
+	}
+	// 播放速度
+	function report_speed() {
+		add_message('Speed: ' + gebi('player').playbackRate.toFixed(2)); 
+	}
+	function slow_little() {
+		gebi('player').playbackRate -= 0.1; 
+		report_speed(); 
+	}
+	function fast_little() {
+		gebi('player').playbackRate += 0.1; 
+		report_speed(); 
+	}
+	function speed_normal() {
+		gebi('player').playbackRate = 1; 
+		report_speed(); 
+	}
+	function slow_medium() {
+		a = gebi('player').playbackRate; 
+		a = parseInt(a * 2) / 2 - 0.5; 
+		if (a <= 0) {
+			a = 0.1; 
+		}
+		gebi('player').playbackRate = a; 
+		report_speed(); 
+	}
+	function fast_medium() {
+		a = gebi('player').playbackRate; 
+		gebi('player').playbackRate = parseInt(a * 2 + 1) / 2; 
+		report_speed(); 
+	}
+	// 播放控制
+	function playorstop() {
+		if (gebi('player').paused) {
+			gebi('player').play(); 
+			add_message('Start'); 
+		}
+		else {
+			gebi('player').pause(); 
+			add_message('Pause'); 
+		}
+	}
+	function report_video_volume() {
+		add_message('Video Volume: ' + parseInt(gebi('video').volume * 100) + 
+					'%'); 
+	}
+	function video_vol_up() {
+		if (gebi('video').volume + 0.05 > 1) {
+			gebi('video').volume = 1; 
+		}
+		else {
+			gebi('video').volume += 0.05; 
+		}
+		report_video_volume(); 
+	}
+	function video_vol_down() {
+		if (gebi('video').volume - 0.05 < 0) {
+			gebi('video').volume = 0; 
+		}
+		else {
+			gebi('video').volume -= 0.05; 
+		}
+		report_video_volume(); 
+	}
+	function video_mute() {
+		gebi('video').muted = ! gebi('video').muted; 
+		if (gebi('video').muted) {
+			add_message('Video Muted'); 
+		}
+		else {
+			report_video_volume(); 
+		}
+	}
+	function report_volume() {
+		add_message('Volume: ' + parseInt(gebi('player').volume * 100) + '%'); 
+	}
+	function vol_up() {
+		if (gebi('player').volume + 0.05 > 1) {
+			gebi('player').volume = 1; 
+		}
+		else {
+			gebi('player').volume += 0.05; 
+		}
+		report_volume(); 
+	}
+	function vol_down() {
+		if (gebi('player').volume - 0.05 < 0) {
+			gebi('player').volume = 0; 
+		}
+		else {
+			gebi('player').volume -= 0.05; 
+		}
+		report_volume(); 
+	}
+	function vol_mute() {
+		gebi('player').muted = ! gebi('player').muted; 
+		if (gebi('player').muted) {
+			add_message('Muted'); 
+		}
+		else {
+			report_volume(); 
+		}
+	}
+	// UI
+	function fix_lyric() {
+		lyric_fix = ! lyric_fix; 
+		if (lyric_fix) {
+			add_message('Fix lyric'); 
+		}
+		else {
+			add_message('Unfix lyric'); 
+		}
+	}
+	function full_screen() {
+		if (document.mozFullScreenElement) {
+			document.mozCancelFullScreen(); 
+		}
+		else {
+			document.documentElement.mozRequestFullScreen(); 
+		}
+	}
+	function transparent_lyric() {
+		lyric_transparent = ! lyric_transparent; 
+		if (lyric_transparent) {
+			add_message('Transparent lyric'); 
+		}
+		else {
+			add_message('Untransparent lyric'); 
+		}
+	}
+	function vertical_align() {
+		global_vertical = ! global_vertical; 
+		if (global_vertical) {
+			add_message('Align vertically'); 
+		}
+		else {
+			add_message('Align Horizontally'); 
+		}
+		refresh_height(window.innerHeight, window.innerWidth); 
+	}
+	function change_blur() {
+		if (gebi('video').classList.contains('blur')) {
+			gebi('video').classList.remove('blur'); 
+			add_message('Unblur video'); 
+		}
+		else {
+			gebi('video').classList.add('blur'); 
+			add_message('Blur video'); 
+		}
+	}
+	function hide_lyric() {
+		gebi('master').hidden = ! gebi('master').hidden; 
+		if (gebi('master').hidden) {
+			add_message('Hide lyric'); 
+		}
+		else {
+			add_message('Show lyric'); 
+		}
+	}
+	function reset_hash_options() {
+		window.location.hash = ""; 
+	}
+	function set_hash_options_RHL() {
+		var param = new URLSearchParams(window.location.hash.slice(1)); 
+		param.set('A', 'R'); 
+		param.set('H', 'H'); 
+		param.set('L', 'L'); 
+		window.location.hash = param.toString(); 
+	}
+	function set_msc_list() {
+		var param = new URLSearchParams(window.location.hash.slice(1)); 
+		if (param.get('L') == 'L') {
+			param.delete('L'); 
+		} else {
+			param.set('L', 'L'); 
+		}
+		window.location.hash = param.toString(); 
+	}
+	function set_hide_video() {
+		var param = new URLSearchParams(window.location.hash.slice(1)); 
+		if (param.get('H') == 'H') {
+			param.delete('H'); 
+		} else {
+			param.set('H', 'H'); 
+		}
+		window.location.hash = param.toString(); 
+	}
+	function hide_video() {
+		gebi('video').hidden = ! gebi('video').hidden; 
+		if (gebi('video').hidden) {
+			add_message('Hide video'); 
+		}
+		else {
+			if (!video_enabled) {
+				video_enabled = true; 
+				gebi('video').load(); 
+				gebi('video').play(); 
+			}
+			add_message('Show video'); 
+		}
+	}
+	function coloring_background() {
+		coloring_flag = ! coloring_flag; 
+		if (coloring_flag) {
+			add_message('Color background'); 
+		}
+		else {
+			add_message('Uncolor background'); 
+		}
+	}
+	function black_background() {
+		coloring_flag = false; 
+		if (gebi('body').style['background-color'] == 'rgb(0, 0, 0)') {
+			gebi('body').style['background-color'] = ''; 
+			add_message('White background'); 
+		}
+		else {
+			gebi('body').style['background-color'] = 'rgb(0, 0, 0)'; 
+			add_message('Black background'); 
+		}
+		black_characters(); 
+	}
+	function black_characters() {
+		if (gebi('h1_0').classList.contains('white')) {
+			gebi('h1_0').classList.remove('white'); 
+			gebi('h1_0').classList.add('black'); 
+			for (var i = 0; i < line_mid.length; i += 1) {
+				gebi('div_'  + (i * 2 + 1)).classList.remove('white'); 
+				gebi('div_'  + (i * 2 + 1)).classList.add('black'); 
+				gebi('span_' + (i * 2 + 2)).classList.remove('white'); 
+				gebi('span_' + (i * 2 + 2)).classList.add('black'); 
+			}
+		}
+		else {
+			gebi('h1_0').classList.remove('black'); 
+			gebi('h1_0').classList.add('white'); 
+			for (var i = 0; i < line_mid.length; i += 1) {
+				gebi('div_'  + (i * 2 + 1)).classList.remove('black'); 
+				gebi('div_'  + (i * 2 + 1)).classList.add('white'); 
+				gebi('span_' + (i * 2 + 2)).classList.remove('black'); 
+				gebi('span_' + (i * 2 + 2)).classList.add('white'); 
+			}
+		}
+	}
+	function hide_chinese(hide_message) {
+		target_status = ! gebi('span_2').hidden; 
+		if (target_status) {
+			attr = 'margin-hide-zh'; 
+		}
+		else {
+			attr = 'margin-show-zh'; 
+		}
+		for (var i = 0; i < line_mid.length; i += 1) {
+			gebi('span_' + (i * 2 + 2)).hidden = target_status; 
+			ja = gebi('div_' + (i * 2 + 1)); 
+			ja.style['margin-left'] = ja.getAttribute(attr); 
+		}
+		if (! hide_message) {
+			if (target_status) {
+				attr = 'margin-hide-zh'; 
+			}
+			else {
+				attr = 'margin-show-zh'; 
+			}
+		}
+	}
+	function ch_font(step) {
+		font_size += step; 
+		var real_size = font_size; 
+		if (document.mozFullScreenElement) {
+			real_size += 0.4; 
+		}
+		gebi('h1_0').style['font-size'] = real_size * 2 + 'em'; 
+		for (var i = 0; i < line_mid.length; i += 1) {
+			gebi('div_' + (i * 2 + 1)).style['font-size'] = real_size + 'em'; 
+			gebi('span_' + (i * 2 + 2)).style['font-size'] = real_size + 'em'; 
+		}
+		if (step) {
+			add_message('font ' + font_size); 
+		}
+		refresh_height(window.innerHeight, window.innerWidth); 
+	}
+	// redirect
+	function redirect(url) {
+		// url 左右都应该有 '/' ，不应包括 '?'
+		// https://stackoverflow.com/questions/901115/
+		if (send_data('')) {
+			add_message('Sending data')
+			setTimeout('redirect("' + url + '")', 100); 
+			return
+		}
+		var param = new URLSearchParams(window.location.hash.slice(1)); 
+		var path = decodeURIComponent(window.location.pathname); 
+		if (url == '/') {
+			if (param.get('L') == 'L') {
+				window.location = '/?L=L' + '#' + param.toString(); 
+			} else {
+				window.location = '/' + '#' + param.toString(); 
+			}
+		} else {
+			param.append('current', path); 
+			window.location = url + '?' + param.toString(); 
+		}
+	}
+	function set_auto_play(chr) {
+		var param = new URLSearchParams(window.location.hash.slice(1)); 
+		if (param.get('A') == chr || chr == 'A') {
+			param.delete('A'); 
+		}
+		else {
+			param.set('A', chr); 
+		}
+		window.location.hash = param.toString(); 
+	}
+	function auto_play() {
+		if (gebi('player').paused) {
+			var param = new URLSearchParams(window.location.hash.slice(1)); 
+			switch (param.get('A')) {
+				case 'N': redirect('/next/'); break; 
+				case 'P': redirect('/prev/'); break; 
+				case 'Q': redirect('/'); break; 
+				case 'R': redirect('/random/'); break; 
+			}
+		}
+	}
+	// 追踪视频亮度 (coloring)
+	function seek_color_list_recurse(target, left, right) {
+		// [left][0] <= target < [right + 1][0] // left 和 right 都可能取到
+		if (left == right) {
+			return left; 
+		}
+		else if (left == right - 1) {
+			if (color_list[right][0] <= target) {
+				return right; 
+			}
+			else {
+				return left; 
+			}
+		}
+		else if (left > right) {
+			alert('AssertionError in seek_color_list_recurse'); 
+		}
+		else {
+			var mid = parseInt((left + right) / 2); 
+			if (color_list[mid][0] <= target) {
+				return seek_color_list_recurse(target, mid, right); 
+			}
+			else {
+				return seek_color_list_recurse(target, left, mid - 1); 
+			}
+		}
+	}
+	function seek_color_list(target, hint) {
+		// 在 color_list 寻找某个时间节点。返回 [i][0] <= target < [i + 1][0] 的 i
+		// hint: 上一次索引的位置，很适合用来优化
+		// 可能返回值: range(-1, color_list.length) + [undefined]
+		if (!color_list.length) {
+			return undefined
+		}
+		if (hint == undefined || hint == -1) {
+			if (target < color_list[0][0]) {
+				return -1; 
+			}
+			else if (target < color_list[1][0]) {
+				return 0; 
+			}
+			else {
+				return seek_color_list_recurse(target, 1, color_list.length-1);
+			}
+		}
+		else if (hint == color_list.length - 1) {
+			if (color_list[hint][0] <= target) {
+				return hint; 
+			}
+			else {
+				return seek_color_list_recurse(target, -1, hint - 1); 
+			}
+		}
+		else {
+			if (target < color_list[hint + 1][0]) {
+				if (color_list[hint][0] <= target) {
+					return hint
+				}
+				else {
+					return seek_color_list_recurse(target, -1, hint - 1); 
+				}
+			}
+			else {	// color_list[hint + 1][0] <= target
+				if (hint == color_list.length - 2) {
+					return hint + 1
+				}
+				else if (target < color_list[hint + 2][0]) {
+					return hint + 1
+				}
+				else {
+					return seek_color_list_recurse(target, hint + 2, 
+													color_list.length - 1); 
+				}
+			}
+		}
+	}
+	function random_event(denominator) {
+		// 有 1 / denominator 的几率返回 true
+		return (parseInt(Math.random * denominator)
+			 == parseInt(Math.random * denominator)); 
+	}
+	function cache_equal(a, b) {
+		if (a[0][0] != b[0][0]) return false; 
+		if (a[0][1] != b[0][1]) return false; 
+		if (a[0][2] != b[0][2]) return false; 
+		if (a[1]    != b[1])    return false; 
+		return true; 
+	}
+	function coloring_get_cache() {
+		// 如果缓存不可用，返回 null ；否则返回 [bg_color, ch_color]
+		if (!color_list.length) {
+			return null; 
+		}
+		var currentTime = gebi('video').currentTime
+		var duration = gebi('video').duration
+		var color_index = seek_color_list(currentTime, seek_color_list_hint); 
+		seek_color_list_hint = color_index; 
+		var lower, upper, is_last = false; 	// lower & upper: color_list 的上下界
+		switch (color_index) {
+			case -1: 
+				upper = color_list[color_index + 1]; 
+				lower = [0, upper[1]]; 
+				break; 
+			case color_list.length - 1 :
+				lower = color_list[color_index]; 
+				upper = [duration, lower[1]]; 
+				is_last = true; 
+				break; 
+			default :
+				lower = color_list[color_index]; 
+				upper = color_list[color_index + 1]; 
+				break; 
+		}
+		if (is_last || !cache_equal(lower[1], upper[1])) {
+			time_difference = upper[0] - lower[0]; 
+			if (time_difference > 2) {
+				if (random_event(10)) {
+					return null; 
+				}
+			}
+			else if (time_difference > 0.1) {
+				return null; 
+			}
+		}
+		return upper[1]; 
+	}
+	var seek_color_list_hint = undefined; 
+	function background_coloring() {
+		if (document.mozFullScreenElement) {
+			return; 
+		}
+		if(snapshot_count % snapshot_interval == 0) {
+			var answer = coloring_get_cache(); 
+			if (!answer) {
+				if (command_list.includes('no_coloring')) {
+					answer = [coloring_white, 1]; 
+				}
+				else {
+					currentTime = gebi('video').currentTime; 
+					func = undefined; 
+					switch (coloring_mode) {
+						case 0: func = traditional_coloring; 	break; 
+						case 1: func = point_coloring; 			break; 
+						case 2: func = fetch_white_coloring; 	break; 
+						default: alert('Coloring Undefined'); 	break; 
+					}
+					if (func) {
+						thumbnail = get_thumbnail(); 
+						answer = func(thumbnail, curr_bgr, curr_fnt); 
+						coloring_set_cache(currentTime, answer); 
+					}
+				}
+			}
+			curr_bgr = answer[0]; 
+			curr_fnt = answer[1]; 
+		}
+		gebi('body').style['background-color'] = 'rgb(' + curr_bgr + ')';
+		if (gebi('h1_0').classList.contains('white') != Boolean(curr_fnt)) {
+			black_characters(); 
+		}
+		snapshot_count += 1; 
+	}
+	// Generate Data
+	var send_data_cache = ''; 
+	function cache_data(data) {
+		send_data_cache += data + '\n'; 
+		if (send_data_cache.length > 1024) {
+			send_data('')
+		}
+	}
+	function send_data(data) {
+		// 返回是否有数据需要发送
+		if (send_data_cache) {
+			data = send_data_cache + data; 
+			send_data_cache = ''; 
+		}
+		if (!data) {
+			return false; 
+		}
+		url = '/data/write/?path='
+		url += encodeURIComponent(decodeURIComponent(window.location.pathname))
+		url += '&data=' + encodeURIComponent(data)
+		var xmlhttp = new XMLHttpRequest(); 
+		xmlhttp.onreadystatechange = function() {
+			if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+				if (xmlhttp.status == 200) {
+					console.log(xmlhttp.responseText); 
+				}
+				else {
+					alert('Error occured: ' + xmlhttp.status); 
+					console.log(xmlhttp.responseText); 
+				}
+			}
+		}; 
+		xmlhttp.open('GET', url, true); 
+		xmlhttp.send(); 
+		return true; 
+	}
+	// Snap
+	function PDf(e) {
+		e.preventDefault(); 
+	}
+	function gebi(cnt) {
+		return document.getElementById(cnt); 
+	}
+
+
+	
+	gebi('player').onplay = player_onplay
+	gebi('player').onpause = player_onpause
+	gebi('player').onratechange = player_onratechange
+	gebi('player').onseeked = player_onseeked
+	gebi('video').volume = 0.5;
+	gebi('video').defaultMuted = true;
+	gebi('video').muted = true;
+	var video_enabled; 
+	{
+		var param = new URLSearchParams(window.location.hash.slice(1)); 
+		if (param.get('H') == 'H') {
+			gebi('video').hidden = true; 
+			video_enabled = false; 
+		} else {
+			video.load(); 
+			video_enabled = true; 
+		}
+	}
+	// 手动跟随歌词
+	var current_tag = 0;
+	var time_record = [];
+	// Sync utils
+	function show_diff() {
+		add_message(gebi('player').currentTime - gebi('video').currentTime);
+	}
+	var sync_record = []
+	gebi('video').onplaying = function(e){
+		var time_diff = gebi('player').currentTime - gebi('video').currentTime;
+		sync_record[sync_record.length] = time_diff
+		var sample_sum = 0; 
+		var sample_num = 0; 
+		/*for (i = 1; i < sync_record.length; i += 1) {
+			if (sync_record[i]) {
+				sample_sum += sync_record[i];
+				sample_num += 1;
+			}
+		}*/
+		if (sample_num) {
+			var sync_time = sample_num / sample_sum;
+		}
+		else {
+			var sync_time = 0;
+		}
+		add_message('playing fired: ' + time_diff + ' - ' + sync_time);
+		if (time_diff > 0.4 || time_diff < -0.4) {
+			sync_video(sync_time);
+		}
+	}
+
+	document.onkeydown = function(e){
+		var c = e.ctrlKey;
+		var s = e.shiftKey;
+		var a = e.altKey;
+		switch (a * 4000 + c * 2000 + s * 1000 + e.keyCode) {
+			// Alt: 4; Ctrl: 2; Shift: 1; Key Code (3位); 全部为十进制
+			case    8: redirect('/'); 			break; // Backspace
+			case    9: previous_tag(); PDf(e); 	break; // Tab
+			case   13: update_tag(); 			break; // Enter
+			case   32: playorstop(); PDf(e);	break; // Space
+			case 4038: video_vol_up(); PDf(e); 	break; // Alt + Up
+			case 2038: vol_up(); PDf(e); 		break; // Ctrl + Up
+			case 4040: video_vol_down(); PDf(e);break; // Alt + Down
+			case 2040: vol_down(); PDf(e); 		break; // Ctrl + Down
+			case   37: posfwd(-10); PDf(e);		break; // Left
+			case   39: posfwd( 10); PDf(e);		break; // Right
+			case 2037: posfwd(-60); PDf(e);		break; // Ctrl + Left
+			case 2039: posfwd( 60); PDf(e);		break; // Ctrl + Right
+			case 1037: posfwd(- 3); PDf(e);		break; // Shift + Left
+			case 1039: posfwd(  3); PDf(e);		break; // Shift + Right
+			case   48: reset_hash_options(); 	break; // 0
+			case   57: set_hash_options_RHL(); 	break; // 9
+			case   61: speed_normal(); 			break; // =
+			case 1061: fast_medium(); 			break; // +
+			case 1065: set_auto_play('A'); 		break; // A
+			case   66: black_background(); 		break; // b
+			case 1066: black_characters(); 		break; // B
+			case 2066: change_blur(); 			break; // Ctrl + B
+			case   67: coloring_background(); 	break; // c
+			case 1067: clear_message(); 		break; // C
+			case   70: full_screen(); 			break; // f
+			case 1070: fix_lyric(); 			break; // F
+			case   72: hide_lyric(); 			break; // h
+			case 1072: hide_video(); 			break; // H
+			case 2072: set_hide_video(); PDf(e);break; // Ctrl + H
+			case   73: print_info(); 			break; // i
+			case 1076: set_msc_list(); 			break; // L
+			case 1077: video_mute(); 			break; // M
+			case   77: vol_mute(); 				break; // m
+			case 1078: set_auto_play('N'); 		break; // N
+			case   78: redirect('/next/'); 		break; // n
+			case 1080: set_auto_play('P'); 		break; // P
+			case   80: redirect('/prev/'); 		break; // p
+			case   81: redirect('/'); 			break; // q
+			case 1081: set_auto_play('Q'); 		break; // Q
+			case 1082: set_auto_play('R'); 		break; // R
+			case   82: redirect('/random/'); 	break; // r
+			case   83: show_diff(); 			break; // s
+			case 1083: sync_video(); 			break; // S
+			case   84: transparent_lyric(); 	break; // t
+			case   86: vertical_align(); 	 	break; // v
+			case   90: hide_chinese(); 			break; // z
+			case  173: slow_medium(); 			break; // -
+			case  188: ch_font(-0.2); 			break; // ,
+			case  190: ch_font(+0.2); 			break; // .
+			case  219: slow_little_(); 			break; // [
+			case  221: fast_little_(); 			break; // ]
+			default : 
+				if (! [8, 13, 16, 17, 18, 32, 38, 40, 37, 39, 37, 39, 37, 39, 
+						37, 39, 61, 61, 66, 67, 70, 72, 77, 82, 83, 83, 84, 90, 
+						173, 219, 221].includes(e.keyCode)) {
+					add_message('Pressed: ' + e.keyCode);
+				}
+		}
+	}
+	function slow_little_() {
+		gebi('player').playbackRate -= 0.05; 
+		report_speed(); 
+	}
+	function fast_little_() {
+		gebi('player').playbackRate += 0.05; 
+		report_speed(); 
+	}
+	document.onmozfullscreenchange = function(e) {
+		gebi('player').hidden = document.mozFullScreenElement; 
+		ch_font(0); 
+//		refresh_height(window.innerHeight, window.innerWidth); 
+	}
+
+	// 自动滚动歌词
+	var param_1 = '这个变量应该被 refresh_height 赋值';
+	var param_2 = '这个变量应该被 refresh_height 赋值';
+
+	// 计算 line_mid
+	var pre_time = 15;
+	var song_time = NaN;
+	var scroll_height; 
+	function simulate_time_fil(song_time) {
+		if (!song_time) {
+			song_time = 90; 
+			setTimeout(function(){
+					simulate_time_fil(gebi('player').duration);
+					refresh_height(window.innerHeight, window.innerWidth);
+				}, 1000);
+		}
+		time_fil = []; 
+		var text_len_list = []; 
+		var text_len_total = 0; 
+		while (true) {
+			i = text_len_list.length; 
+			var father = gebi('father_' + i); 
+			if (! father) {
+				break; 
+			}
+			var display = gebi('father_' + i).style.getPropertyValue('display');
+			if (display == 'none')
+				gebi('father_' + i).style.removeProperty('display')
+			console.log(JSON.stringify(gebi('span_' + (i * 2 + 1)).innerText))
+			text_len_list[i] = gebi('span_' + (i * 2 + 1)).innerText.length; 
+			text_len_total += text_len_list[i]; 
+			if (display == 'none')
+				gebi('father_' + i).style['display'] = 'none'
+		}
+		var text_rate = text_len_total / (song_time - 20); 
+		time_fil[0] = 15; 
+		for (var i = 0; i < text_len_list.length; i += 1) {
+			time_fil[i * 2 + 1] = time_fil[i*2] + text_len_list[i] / text_rate; 
+			if (i != text_len_list.length - 1) {
+				time_fil[i * 2 + 2] = time_fil[i * 2 + 1]; 
+			}
+		}
+		calc_line_mid(); 
+	}
+	
+	function calc_line_mid() {
+		// calculate line_mid, time_b, and time_a
+		for (var i = 0; i * 2 < time_fil.length; i += 1) {
+			time_b[i] = time_fil[i * 2];
+			time_a[i] = time_fil[i * 2 + 1];
+			line_mid[i] = (time_b[i] + time_a[i]) / 2;
+		}
+		pre_time = line_mid[0];
+		song_time = line_mid[line_mid.length - 1] - pre_time;
+	}
+	
+	var time_fil = []; 
+	var time_b = [];	// before
+	var time_a = [];	// after
+	var line_mid = [];	// avg(before, after)
+	
+	
+	time_fil = [1.660541, 2.628937, 3.558375, 6.629208, 9.246354, 12.19352, 12.921791, 15.099645, 16.255394, 19.615499, 20.587207, 22.287019, 23.217228, 24.593249, 25.360353, 27.58329, 28.635436, 30.816978, 31.706999, 34.780894, 35.467936, 37.612269, 38.661457, 40.641144, 41.529603, 44.239311, 45.331499, 48.282665, 49.09229, 50.778353, 51.547728, 54.216332, 56.118978, 59.799644, 60.649186, 64.409832, 67.311686, 70.103623, 71.033457, 73.745707, 74.030123, 74.961352, 76.175311, 78.558915, 78.881811, 80.297623, 81.186873, 83.97829, 85.352811, 89.235519, 90.247769, 93.039811, 93.726873, 96.718665, 97.648582, 100.56004, 101.328707, 102.540727, 103.309123, 106.98554, 108.838393, 112.435518, 113.485748, 117.653498, 118.381393, 122.910227, 123.388102, 125.652247, 128.241331, 132.044477, 132.810977, 136.006414, 137.263122, 140.336872, 140.539227, 143.046456, 143.370706, 146.122268, 147.37431, 149.761727, 149.963872, 153.966956, 154.896977, 156.472747, 156.755518, 160.394852, 162.134352, 165.08881, 165.493352, 168.411977, 170.347664, 172.85806, 173.465185, 175.869256, 176.43511, 178.86735, 180.151662, 182.94212, 186.054724, 190.097329, 190.582099, 191.997474, 193.047954, 194.626974, 195.799995, 199.638558, 200.243954, 201.981537, 203.073891, 205.589079, 205.791079, 208.501183, 209.350662, 211.618224, 212.021829, 214.531224, 214.975391, 216.797016, 218.007433, 220.677995, 221.326433, 224.398933, 225.489224, 228.157683, 228.521474, 231.998954, 233.010829, 235.355349, 236.526037, 239.386808, 239.751224, 243.836912, 245.935182, 247.553265, 248.363015, 250.991911, 251.599224, 253.378099, 254.348515, 257.218765, 258.390828, 260.899786, 261.021099, 263.728932, 264.740161, 267.73514, 267.896828, 271.978349, 275.054349, 277.193577, 277.395806, 281.198535, 281.885931, 283.582619, 284.673514, 287.987556, 288.351494, 291.45866, 292.508868, 297.272534, 297.838597, 300.022243, 300.791222, 303.057347, 304.270097, 308.277138, 309.530743, 313.170597, 313.85818, 316.892493, 318.590722, 321.544784, 321.827638, 323.526805, 324.699118, 329.598201, 330.731347, 335.298388, 338.853743, 341.677034, 342.162618, 343.538763, 344.753055, 347.665368, 348.637993, 352.115555, 352.88418, 357.092951, 358.266368, 362.354201, 363.041472, 365.349951, 367.443618, 370.921972, 371.892638, 376.299597, 377.069201, 378.445097, 380.022618, 383.137701, 383.743993, 387.102659, 388.074659, 393.210743, 394.222784, 398.270847, 398.836826, 402.318055, 404.29395, 406.760638, 407.721908, 411.03897, 411.726824, 413.707429, 414.966637, 418.363929, 419.091512, 422.124658, 426.20822, 427.29974, 427.947282, 431.344053, 432.598532, 435.916886, 436.929303, 439.962365, 440.609949, 444.495053, 445.911636, 448.819678, 449.587949, 452.460761, 453.51299, 457.718865, 458.932886, 461.076657, 461.360511, 464.15199, 465.364011, 468.116282, 469.249261, 472.810699, 475.712219, 480.600865, 481.857115, 484.645386, 485.536386, 489.257823, 490.02549, 492.533594, 494.070657, 497.218427, 497.986761, 501.019886, 502.961282, 505.712698, 506.359657, 509.153011, 511.458844, 513.961802, 514.164156, 516.670427, 517.480448, 520.916719, 521.281052, 523.417989, 527.340677, 530.535885, 530.892177, 533.887885, 534.938468, 538.292031, 538.736698, 540.273468, 541.32701, 546.466427, 547.356635, 550.511406, 553.018343, 554.999198, 560.858218, 566.036468]; 
+	calc_line_mid(); 
+	
+
+	// 设置字体大小
+	ch_font(0); 
+
+	var refresh_height_lock = false; 
+	
+	function refresh_height(height, width) {
+		// == acquire lock ==
+		var count = 0
+		var lock_number = 1 + parseInt(Math.random() * 100000); 
+		if (refresh_height_lock) {
+			setTimeout(function(e) { refresh_height(height, width); }, 100); 
+			console.log('refresh height locked'); 
+		}
+		refresh_height_lock = lock_number; 
+		if (refresh_height_lock != lock_number) {
+			alert('unknown situation'); 
+		}
+		console.log('start refresh height ' + lock_number); 
+		
+		// == 显示所有元素 ==
+		// set width
+		gebi('player').style['width'] = width; 
+		gebi('main').style['width'] = width; 
+	
+		// remove hidden status
+		var chinese_hidden = gebi('span_2').hidden; 
+		if (chinese_hidden) {
+			hide_chinese(true); 
+		}
+		var master_hidden = gebi('master').hidden; 
+		if (master_hidden) {
+			gebi('master').hidden = false; 
+		}
+		
+		// == 排列元素 ==
+		// remove old data
+		for (var i = 0; i < line_mid.length; i += 1) {
+			gebi('father_' + i).style.removeProperty('margin-top');
+			gebi('father_' + i).classList.remove('absolute-pos');
+			gebi('father_' + i).style.removeProperty('display');
+			gebi('div_' + (2 * i + 1)).style.removeProperty('margin-left');
+			gebi('div_' + (2 * i + 2)).style.removeProperty('margin-left');
+			gebi('div_' + (2 * i + 1)).style.removeProperty('width');
+			gebi('div_' + (2 * i + 2)).style.removeProperty('width');
+			transparent_line('father_' + i, false); 
+		}
+		// 计算 width
+		var ja_width_list = [];
+		var zh_width_list = [];
+		for (var i = 0; i < line_mid.length; i += 1) {
+			ja_width_list[i] = gebi('div_' + (2 * i + 1)).offsetWidth;
+			zh_width_list[i] = gebi('div_' + (2 * i + 2)).offsetWidth;
+		}
+		var max_ja_width = Math.max.apply(null, ja_width_list); 
+		var max_zh_width = Math.max.apply(null, zh_width_list); 
+		var vertical = (global_vertical || 
+						max_ja_width + 8 + max_zh_width > width * 0.75);
+		// 设置 width
+		if (vertical) {
+			for (var i = 0; i < line_mid.length; i += 1) {
+				var ja = gebi('div_' + (2 * i + 1)); 
+				var zh = gebi('div_' + (2 * i + 2)); 
+				var margin_show_zh = (width - ja_width_list[i]) / 2; 
+				ja.setAttribute('margin-show-zh', margin_show_zh); 
+				ja.setAttribute('margin-hide-zh', margin_show_zh); 
+				ja.style['margin-left'] = margin_show_zh; 
+				zh.style['margin-left'] = (width - zh_width_list[i]) / 2; 
+				zh.style['margin-top'] = 5; 
+			}
+		}
+		else {
+			for (var i = 0; i < line_mid.length; i += 1) {
+				var ja = gebi('div_' + (2 * i + 1)); 
+				var zh = gebi('div_' + (2 * i + 2)); 
+				margin_show_zh = (width-max_zh_width-ja_width_list[i]-8) / 2;
+				var margin_hide_zh = (width - ja_width_list[i]) / 2; 
+				ja.setAttribute('margin-show-zh', margin_show_zh); 
+				ja.setAttribute('margin-hide-zh', margin_hide_zh); 
+				ja.style['margin-left'] = margin_show_zh; 
+				zh.style['margin-left'] = (max_ja_width-ja_width_list[i])/2 + 8;
+				zh.style['margin-top'] = 20; 
+			}
+		}
+		// 计算 height
+		var height_list = [];
+		for (var i = 0; i < line_mid.length; i += 1) {
+			height_list[i] = gebi('father_' + i).offsetHeight; 
+		}
+		var speed_min = 0;
+		var speed_max = Infinity; 
+		for (var i = 1; i < line_mid.length; i += 1) {
+			var scroll_dist = (height_list[i] + height_list[i - 1]) / 2 + 10;
+			var target = parseInt(scroll_dist / (line_mid[i] - line_mid[i-1]));
+			if (speed_min < target) {
+				speed_min = target;
+			}
+		}
+		for (var i = 0; i < line_mid.length; i += 1) {
+			var target = (height-136-height_list[i]) / (time_a[i]-time_b[i]); 
+			if (speed_max > target) {
+				speed_max = target; 
+			}
+		}
+		var speed = (speed_min * 9 + speed_max) / 10; 
+		
+		// 设置 height
+		var offset = 136; 	// 32 + 72 + 72
+		for (var i = 0; i < line_mid.length; i += 1) {
+			if (i == line_mid.length - 1) {	// footer
+				target = (height - 136 - height_list[i]) / 2;
+				// 136: height - master.offsetHeight (实验值)
+			}
+			else {
+				scroll_dist = (height_list[i + 1] + height_list[i]) / 2 + 10;
+				target = speed * (line_mid[i + 1] - line_mid[i]) - scroll_dist;
+			}
+			var father = gebi('father_' + i); 
+			father.setAttribute('offset', offset); 
+			father.style['top'] = offset; 
+			offset += target + height_list[i]; 
+			father.classList.add('absolute-pos'); 
+		}
+		gebi('footer').setAttribute('offset', offset);
+		gebi('footer').style['top'] = offset; 
+
+		for (var i = 1; i < 2 * line_mid.length; i += 2) {
+			gebi('div_' + i).style.removeProperty('width');
+			gebi('div_' + i).style['width'] = gebi('span_' + i).offsetWidth + 1;
+		}
+	
+		// == 计算滚动参数 ==
+		var cli_height = height;
+		var main_height = cli_height - gebi('player').offsetHeight; 
+		gebi('main').style['height'] = main_height;
+	
+		var footer_height = (height - 136) / 2
+		var scroll_height = offset - (height - 136); 
+		var offset_top = gebi('father_0').offsetTop - footer_height + 10;
+			// 10: div_1 的 margin-top
+			// gebi('h1_0').getBoundingClientRect().top
+		if (!song_time) {
+			song_time = gebi('player').duration - 20;
+			simulate_time_fil(song_time); 
+		}
+		param_1 = (scroll_height - offset_top) / song_time;
+		param_2 = offset_top - param_1 * pre_time;
+		gebi('video').style['width'] = width;
+		gebi('video').style['height'] = main_height;
+		// == 还原 ==
+		if (master_hidden) {
+			gebi('master').hidden = true; 
+		}
+		for (var i = 0; i < line_mid.length; i += 1) {
+			if (chinese_hidden) {	// 还原 chinese_hidden
+				gebi('span_' + (i * 2 + 2)).hidden = true; 
+				ja.style['margin-left'] = margin_hide_zh; 
+			}
+		}
+	
+		// == release lock ==
+		refresh_height_lock = 0; 
+		console.log('stop refresh height ' + lock_number); 
+	}
+	window.onresize = function (event) {
+		refresh_height(event.target.innerHeight, event.target.innerWidth);
+	}
+	refresh_height(window.innerHeight, window.innerWidth);
+	
+	function transparent_line(index, action) {	// action 表示是否行动
+		gebi(index).hidden = action && lyric_transparent; 
+	}
+	
+	var absolute_align = true; // 如果设置为 false ，会使用旧方式排列元素
+	
+	function set_offset(elementId, height_value, transparent) {
+		// transparent: true=透明; false=不透明; undefined=必须正确排列（不得优化）
+		var father = gebi(elementId); 
+		var no_display = false; 
+		if (lyric_transparent == false && transparent == true) {
+			transparent = false; 
+		}
+		if (transparent == false) {
+			var offset = parseInt(father.getAttribute('offset')); 
+			transparent = offset - height_value > window.innerHeight - 136 || 
+						offset - height_value < -100; 
+		}
+		if (transparent) {
+			if (father.style['display'] != 'none')
+				father.style['display'] = 'none';
+		}
+		else {
+			if (father.style['display'] != '')
+				father.style['display'] = '';
+			var offset = parseInt(father.getAttribute('offset')); 
+			father.style['top'] = offset - height_value; 
+			transparent_line(elementId, false); 
+		}
+	}
+	
+	function set_color(elementId, flag) {
+		if (flag)
+			gebi(elementId).classList.add('highlight');
+		else
+			gebi(elementId).classList.remove('highlight');
+	}
+	
+	function get_scroll(current_time) {
+		var height_value = current_time * param_1 + param_2;
+		if (height_value < 0) {
+			height_value = 0; 
+		}
+		if (height_value > scroll_height) {
+			height_value = scroll_height; 
+		}
+		return parseInt(height_value);
+	}
+	
+	var current_state = -1; 
+	function change_state(state) {
+		// 0: paused or unfixed; 1: absolute align; 2: normal align
+		if (current_state == state) {
+			return; 
+		}
+		master = gebi('master')
+		if (state == 0) {
+			var current_time = gebi('player').currentTime; 
+			var height_value = get_scroll(current_time); 
+			master.scrollTo(0, height_value); 
+		}
+		if (state == 1) {
+			master.style['overflow-y'] = 'hidden'; 
+			gebi('father_h1').style['margin-right'] = 0; 
+			master.scrollTo(0, 0);
+			transparent_line('father_h1', false); 
+			for (var i = 0; i < line_mid.length; i += 1) {
+				transparent_line('father_' + i, false);
+			}
+		}
+		if (state == 0 || state == 2) {
+			master.style['overflow-y'] = 'auto'; 
+			var bar_width = master.offsetWidth - master.clientWidth; 
+				// https://stackoverflow.com/questions/16670931/hide-scroll-bar
+			gebi('father_h1').style['margin-right'] = -bar_width; 
+			set_offset('father_h1', 0); 
+			set_offset('footer', 0); 
+			for (var i = 0; i < line_mid.length; i += 1) {
+				set_offset('father_' + i, 0); 
+			}
+		}
+		current_state = state; 
+	}
+	
+	// 追踪视频亮度 (coloring)
+	var color_list = []; 
+	var coloring_flag = false; 
+	gebi('video').onloadedmetadata = function(e){
+		coloring_flag = true; 
+	}
+	var snapshot_interval = color_list.length ? 1 : 10; 
+	var coloring_speed = 10; var coloring_interval = 4; 
+	var canvas_width = 64; var canvas_height = 36; // 16:9
+	var curr_fnt = 1; 
+	var curr_bgr = [255, 255, 255]; 
+	var canvas = document.createElement('canvas'); 
+	canvas.width = canvas_width; 
+	canvas.height = canvas_height; 
+	var ctx = canvas.getContext('2d'); 
+	var coloring_count = 0; var snapshot_count = 0; 
+	// body.insertBefore(canvas, main)
+	
+	// 设置 timer 追踪歌词
+	
+	var interval_id = setInterval(function () {
+		if (!song_time) {
+			refresh_height(window.innerHeight, window.innerWidth);
+		}
+		if (gebi('player').paused) {
+			change_state(0); 
+			return;
+		}
+		// Start: processing background
+		if (coloring_flag) {
+			coloring_count += 1; 
+			if (coloring_count % coloring_interval == 0) {
+				background_coloring(); 
+			}
+		}
+		// End: processing background
+		if (!lyric_fix) {
+			change_state(0); 
+			return; 
+		}
+		//				1					0
+		// 从 100 - master_height 到    scroll_height ，负数取 0	<= x
+		// 对应时间   pre_time     到 pre_time + song_time		<= y
+		// (y - y1) / (x - x1) = (y0 - y1) / (x0 - x1)		//两点确定直线方程
+		// 解方程并带入，然后将 x 提取，得到 param_1 和 param_2 使得
+		// h = x * param_1 + param_2
+		var current_time = gebi('player').currentTime; 
+		var height_value = get_scroll(current_time); 
+		if (absolute_align) {
+			change_state(1); 
+			set_offset('father_h1', height_value, 
+						current_time > Math.min(time_b[0] + 1, 3)); 
+			for (var i = 0; i < line_mid.length; i += 1) {
+				set_offset('father_' + i, height_value, 
+							time_b[i] - current_time > 1 || 
+							current_time - time_a[i] > 1); 
+				
+					set_color('div_' + (i * 2 + 1),
+								!(time_b[i] - current_time > 0.2 || 
+								current_time - time_a[i] > -0.2))
+				
+			}
+		}
+		else {
+			change_state(2); 
+			gebi('master').scrollTo(0, height_value);
+			transparent_line('father_h1', 
+								current_time > Math.min(time_b[0] + 1, 3))
+			for (var i = 0; i < line_mid.length; i += 1) {
+				dist = Math.max(time_b[i] - current_time, 
+								current_time - time_a[i])
+				transparent_line('father_' + i, dist > 1);
+			}
+		}
+	}, 20);
+	
+	gebi('player').play(); 
+  </script>
+</body>
+</html>

@@ -22,6 +22,8 @@ If you have GPU, you can accelerate video encoding:
 * `20200508_2244.mp3`: Audio file
 * `20200508_2244.txt`: Transcript, without time info
 * `20200508_2244.info`: Time info for transcript
+* `20200508_2244.html`: HTML Player for `20200508_2244.*`
+  (will display video after building `build/20200520Presentation.mp4`)
 
 #### Build targets
 * `build/20200520Presentation.pdf`: slides in pdf
