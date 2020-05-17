@@ -1,0 +1,185 @@
+Hi, I am Eric Li. 
+Let me show you the ethical problems in P2P architectures. 
+
+Suppose you want to share a file with a lot of Internet users.
+You may need to look for file sharing applications.
+Traditionally this kind of applications follow a client-server design. 
+
+There is one server in the network.
+Sometimes there are a few of them.
+And there are many clients it talks to. 
+
+However, this structure has problems.
+If the server is down or its Internet connection is broken,
+then the entire service can't work anymore.
+This is known as single point of failure. 
+
+Also, the server does not have infinite bandwidth.
+Say one thousand(1000) clients are downloading something at the same time,
+then the average speed will be slow
+because the server is the bottle neck of the network. 
+
+However, it is easy for application managers to manage its users,
+because all the information they need can be found in like server logs. 
+
+A new network architecture for sharing is Peer-to-Peer. 
+
+You can think of it as the clients in the client-server model 
+are talking to each others. 
+
+There is still some kind of server or service 
+for peers to find each other, 
+but the major traffic goes directly between peers. 
+
+P2P solves the problem of single point of failure in client server. 
+Suppose you are sharing a file with 100 users, 
+and at some time your Internet connection is gone. 
+But if you have sent the entire file's content out, 
+to different receivers, 
+then the receivers in P2P can reconstruct the original file. 
+
+This feature also makes P2P networks scalable. 
+This chart shows that if you need to send a file to a lot of users, 
+P2P networks spread it much faster than client-server networks. 
+Because the bottle neck on the sharer is gone. 
+
+The easiness to share files in P2P creates copyright problems 
+as users share infringing content in P2P networks. 
+
+A research in 2011 shows that 11 percent of 
+the Internet's traffic are infringing content 
+on a popular P2P network called BitTorrent. 
+
+Research on users' ethical reasoning shows that 
+they usually realize that infringement over P2P is an ethical issue. 
+
+However, they feel less guilty 
+if they pay some subscription fee to use the P2P system. 
+
+Their belief of consumer rights and reciprocity(reciProcity) 
+further increases piracy in P2P systems. 
+
+When so many users share in a distributed system, 
+it becomes much more difficult to stop them 
+than illegal sharing in client-server. 
+Because in client-server you just need to take the server down. 
+
+The debate on how to stop infringing over P2P is polarized 
+and has been lasting for a long time. 
+People have thought of all kinds of ways. 
+
+One way copyright holders came up with is to ban the P2P technology 
+because it makes infringing so easy. 
+However, is it worthy to ban a technology just 
+because its potential damage to the copyright? 
+
+It turns out that similar cases have happened 
+when Sony sold a video recorder called Betamax 
+which can be used to pirate videos. 
+The court decided that the technology shouldn't be banned, 
+because it has large potential uses and commercial value. 
+However, it doesn't mean that Sony can misbehave 
+like by advertising about the potential infringing use. 
+Later this is known as the Sony doctrine. 
+Applying this analysis, the P2P technology 
+also shouldn't be banned because it has powerful non-infringing uses. 
+
+People have also proposed other ways. 
+Some people think there should be harsh penalties for pirates 
+like cutting the Internet service. 
+They are kind of more on the copyright holder's side. 
+
+Some psychological researchers think we should 
+educate the customers about the harm of infringement. 
+
+They also propose that copyright holders should make use of 
+the new model proposed by P2P and change their business model. 
+
+Letting copyright holders to change and integrate 
+into the P2P sharing nature seems unrealistic in short term. 
+So they chose to monitor users. 
+
+Actually it turns out that monitoring users in P2P network 
+is in some sense even easier than in client-server networks. 
+A paper in 2010 shows that if you crawl the distributed hash table, 
+which is a data structure in P2P networks, 
+you can track nearly 8 million IP addresses. 
+With these IP addresses, copyright holders can map them to users. 
+
+This is ironic when considering the original design of P2P, 
+which values users' anonymity(anoNimity) and freedom in the network. 
+
+Other research shows that the government and copyright holders 
+are really tracking P2P users. 
+Well, actually not copyright holders, but organizations like RIAA or MPAA. 
+They create fake users on P2P networks to track other users. 
+
+The introduction of P2P also brings two kinds of troubles 
+to Internet Service Providers. 
+
+The direct effect comes from the asymmetric bandwidth. 
+In a client-server model, users usually download more than upload. 
+So ISPs optimize their network and make download bandwidth larger. 
+But P2P users usually acquire same download and upload bandwidth, 
+which isn't friendly to ISPs' configuration. 
+
+The indirect effect comes from the Digital Millennium Copyright Act. 
+When copyright owners find infringing activities on an ISP's network, 
+they can notify the ISP. 
+The ISP has to take down the illegal content quickly, 
+or it may suffer secondary liability of the infringement. 
+
+That means, ISPs have to invest time and money on responding to the notices. 
+But if you think about it, they have no control to the P2P technology, 
+and their customer's use of this technology brings them trouble. 
+
+This becomes more troublesome for universities, 
+because universities act as ISPs for their students, 
+and they are responsible for students' conduct. 
+The law requires universities to notify students about this. 
+For example, this is the announcement by UC Davis. 
+
+Some users may be leeching, 
+which means downloading from the P2P network without uploading. 
+
+Some users do this in order to save their uploading bandwidth. 
+This behavior is considered unethical by the community 
+because it contradicts the concept of reciprocity(reciProcity) in P2P. 
+If no one is willing to upload the content to the network, 
+then P2P is in no way better than client server. 
+
+However, another possible motivation is to prevent DMCA liability. 
+Users get in trouble with DMCA 
+because they upload the pirated content to the network. 
+If they only download the content, there will be no problems. 
+So users have to make a decision between ethics and the law. 
+
+Though most P2P networks have an open design, Xunlei follows a different way. 
+Xunlei is a P2P client designed by a Chinese company. 
+
+It uses a proprietary(proPrietary) network that has centralized control, 
+which is usually avoided in P2P network design. 
+Research shows that it may be good for piracy control, 
+but can harm users' privacy with over surveillance. 
+
+Xunlei also uses a weak encryption mechanism, 
+which may allow hackers to track users' activities. 
+
+People also find that Xunlei's network is trying to 
+encapsulate other open P2P networks, 
+which becomes an ethical question because Xunlei can benefit 
+from just proxying the other networks. 
+
+There are a lot more ethical problems created by P2P 
+that can't be discussed in this 10-minute presentation. 
+
+For example, P2P networks can easily spread virus, 
+because everyone can share anything. 
+
+Also, Microsoft Windows 10 turns on its P2P service updates by default, 
+which create problem for local area network managers. 
+
+Thank you. 
+
+Here are the references for my paper and images used in this presentation. 
+

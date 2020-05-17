@@ -1,0 +1,356 @@
+\documentclass[mathserif,serif,14pt,aspectratio=169]{beamer}
+
+\usepackage{listings}
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{eso-pic}
+\usepackage[inkscapepath=ICTPresentationSvg/]{svg}
+% \usepackage[cm-default]{fontspec}
+% \usepackage{xeCJK}
+\usepackage{ifthen}
+
+% \setCJKmainfont{Source Han Sans CN}
+% \setCJKmonofont{Source Han Sans CN}
+% \setmainfont{Liberation Sans}
+% \setmonofont{Courier 10 Pitch}
+\usepackage{tgtermes}
+\usepackage[T1]{fontenc}
+\usepackage{textpos}
+
+\def\BibTeX{{\rmfamily B\kern-.05em
+\textsc{i\kern-.025em b}\kern-.08em
+T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\newcommand{\link}[1]{\href{#1}{#1}}
+
+\newcommand{\pic}[2]{
+	\centerline{\includegraphics[scale=#1]{#2}}
+}
+
+% \centerline{\includegraphics[scale=#1]{#2}} % 0/0
+
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{p2p.bib}
+
+\tikzset{grid/.style={gray,very thin,opacity=1}}	% 0/0
+
+\definecolor{Pink}{HTML}{ff0bff}
+\definecolor{Blue}{HTML}{0000ff}
+\definecolor{Green}{HTML}{008a8c}
+\definecolor{Brown}{HTML}{a52a2a}
+
+\begin{document}
+
+\AddToShipoutPictureFG*{
+	\AtPageLowerLeft{
+		\put(\LenToUnit{0.7\paperwidth},\LenToUnit{0.1\paperheight}){
+			\begin{tikzpicture}
+				\definecolor{rxx}{HTML}{ff0000}
+				\definecolor{xgx}{HTML}{00ff00}
+				\definecolor{xxb}{HTML}{0000ff}
+				\definecolor{rgx}{HTML}{ffff00}
+				\definecolor{xgb}{HTML}{00ffff}
+				\definecolor{rxb}{HTML}{ff00ff}
+				\definecolor{rgb}{HTML}{ffffff}
+				\definecolor{xxx}{HTML}{000000}
+				\definecolor{xred}{RGB}{0, 255, 255}
+				\definecolor{xgreen}{RGB}{255, 0, 255}
+				\filldraw [color=rxx] (0, 1) rectangle (1, 2);
+				\filldraw [color=xgx] (1, 1) rectangle (2, 2);
+				\filldraw [color=xxb] (2, 1) rectangle (3, 2);
+				\filldraw [color=rgb] (1, 3) rectangle (2, 4);
+				\filldraw [color=rgx] (0, 2) rectangle (1, 3);
+				\filldraw [color=rxb] (1, 2) rectangle (2, 3);
+				\filldraw [color=xgb] (2, 2) rectangle (3, 3);
+				\filldraw [color=xxx] (1, 0) rectangle (2, 1);
+			\end{tikzpicture}
+		}
+	}
+}
+
+\begin{frame}
+	\centerline{\Large Ethical problems in P2P architectues}
+	
+	\
+	
+	\centerline{Eric Li}
+	\centerline{May 20, 2020}
+	% Transcript: Hi, I am the espeak program controlled by Eric Li's script. Let me show you the ethical problems in P2P architectures. I will probably be replaced by actual Eric Li's speech. 
+	% Transcript : Hi, I am Eric Li. Let me show you the ethical problems in P2P architectures. 
+\end{frame}
+
+% \AtBeginSection[]{
+% 	\begin{frame}
+% 		\frametitle{Table of Contents}
+% 		\tableofcontents[currentsection]
+% 	\end{frame}
+% }
+
+\section{Content}
+
+\begin{frame}
+	\frametitle{Client-server}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}\setlength\itemsep{0.5em}
+				\item<2-> One (or a few) server
+				\item<2-> Many clients
+				\item<3-> Con: Single point of failure
+				\item<4-> Con: Bandwidth bottle neck
+				\item<5-> Pro: Monitor users
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\pic{0.65, trim={2cm 10.2cm 9cm 2cm}, clip}{assets/cn114.pdf}
+			\nocite{01_KuroseJamesF2013Cn:a}
+		\end{column}
+	\end{columns}
+	% Transcript: Suppose you want to share a file with a lot of Internet users. You may need to look for file sharing applications. Traditionally this kind of applications follow a client-server design. 
+	% Transcript: There is one server in the network. Sometimes there are a few of them. And there are many clients it talks to. 
+	% Transcript: However, this structure has problems. If the server is down or its Internet connection is broken, then the entire service can't work anymore. This is known as single point of failure. 
+	% Transcript: Also, the server does not have infinite bandwidth. Say one thousand clients are downloading something at the same time, then the average speed will be slow because the server is the bottle neck of the network. 
+	% Transcript: However, it is easy for application managers to manage its users, because all the information they need can be found in like server logs. 
+\end{frame}
+
+\begin{frame}
+	\frametitle{P2P}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}\setlength\itemsep{0.3em}
+				\item<1-> P2P = Peer-to-Peer
+				\item<2-> Client to client
+				\item<3-> Server for finding peers
+				\item<4-> No single point of failure
+				\item<5-> Scalability
+			\pic{0.5, trim={5.5cm 2.5cm 3cm 13.5cm}, clip}{assets/cn175.pdf}
+			\nocite{01_KuroseJamesF2013Cn:a}
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\pic{0.65, trim={10cm 10.2cm 1cm 2cm}, clip}{assets/cn114.pdf}
+			\nocite{01_KuroseJamesF2013Cn:a}
+		\end{column}
+	\end{columns}
+	% Transcript: A new network architecture for sharing is Peer-to-Peer. 
+	% Transcript: You can think of it as the clients in the client-server model are talking to each others. 
+	% Transcript: There is still some kind of server or service for peers to find each other, but the major traffic goes directly between peers. 
+	% Transcript: P2P solves the problem of single point of failure in client server. Suppose you are sharing a file with 100 users, and at some time your Internet connection is gone. But if you have sent the entire file's content out, to different receivers, then the receivers in P2P can reconstruct the original file. 
+	% Transcript: This feature also makes P2P networks scalable. This chart shows that if you need to send a file to a lot of users, P2P networks spread it much faster than client-server networks. Because the bottle neck on the sharer is gone. 
+\end{frame}
+
+\begin{frame}
+	\frametitle{Copyright problems}
+	\begin{itemize}\setlength\itemsep{0.5em}
+	\item<2-> 2011: infringing content on BitTorrent = 11\% Internet's traffic
+	 \nocite{53_house2011technical}
+	\item<3-> Users' ethical choice
+		\begin{itemize}\setlength\itemsep{0.3em}
+		\item<3-> Realization
+		\item<4-> Subscription fee
+		\item<5-> Consumer rights
+		\item<5-> Reciprocity
+		\end{itemize}
+	\item<6-> Difficult to stop
+	\end{itemize}
+	\begin{textblock}{2}[0,0](10,-5)
+		% https://upload.wikimedia.org/wikipedia/commons/b/b0/Copyright.svg
+		\begin{tikzpicture}[scale=1.5]
+			\fill[fill=black] (0, 0) circle [radius=.98];
+			\fill[fill=white] (0, 0) circle [radius=.78];
+			\fill[fill=black] (0, 0) circle [radius=.55];
+			\fill[fill=white] (0, 0) circle [radius=.30];
+			\fill[fill=white] (.17, -.13) rectangle (.62, .12);
+		\end{tikzpicture}
+	\end{textblock}
+	% Transcript: The easiness to share files in P2P creates copyright problems as users share infringing content in P2P networks. 
+	% Transcript: A research in 2011 shows that infringing content on a popular P2P network called BitTorrent compose 11 percent of the Internet's traffic. 
+	% Transcript: Research on users' ethical reasoning shows that they usually realize that infringement over P2P is an ethical issue. 
+	% Transcript: However, they feel less guilty if they pay some subscription fee to use the P2P system. 
+	% Transcript: Their belief of consumer rights and reciprocity further increases piracy in P2P systems. 
+	% Transcript: When so many users share in a distributed system, it becomes much more difficult to stop them than illegal sharing in client-server. Because in client-server you just need to take the server down. 
+\end{frame}
+
+\begin{frame}
+	\frametitle{How to stop?}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}\setlength\itemsep{0.5em}
+			\item<2-> Ban the technology
+				\begin{itemize}
+				\item<3-> Sony doctrine
+				\end{itemize}
+			\item<4-> Harsh ways
+				\begin{itemize}
+				\item<4-> Cut Internet service
+				\end{itemize}
+			\item<5-> Moderate ways
+				\begin{itemize}
+				\item<5-> Educate customers
+				\end{itemize}
+			\item<6-> Revolutionary ways
+				\begin{itemize}
+				\item<6-> Change business model
+				\end{itemize}
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			% https://commons.wikimedia.org/wiki/
+			% File:Vienna_Convention_road_sign_B2a.svg
+			\pic{0.05}{assets/stop.pdf}
+		\end{column}
+	\end{columns}
+
+	% Transcript: The debate on how to stop infringing over P2P is polarized and has been lasting for a long time. People have thought of all kinds of ways. 
+	% Transcript: One way copyright holders came up with is to ban the P2P technology because it makes infringing so easy. However, is it worthy to ban a technology just because its potential damage to the copyright? 
+	% Transcript: It turns out that similar cases have happened when Sony sold a video recorder called Betamax which can be used to pirate videos. The court decided that the technology shouldn't be banned, because it has large potential uses and commercial value. However, it doesn't mean that Sony can misbehave like by advertising about the potential infringing use. Later this is known as the Sony doctrine. Applying this analysis, the P2P technology also shouldn't be banned because it has powerful non-infringing uses. 
+	% Transcript: People have also proposed other ways. Some people think there should be harsh penalties for pirates like cutting the Internet service. They are kind of more on the copyright holder's side. 
+	% Transcript: Some psychological researchers think we should educate the customers about the harm of infringement. 
+	% Transcript: They also propose that copyright holders should make use of the new model proposed by P2P and change their business model. 
+\end{frame}
+
+\begin{frame}
+	\frametitle{Surveillance}
+	\begin{itemize}\setlength\itemsep{0.5em}
+	\item<2-> Easy to track other users in P2P
+		\begin{itemize}\setlength\itemsep{0.3em}
+		\item<2-> Crawling DHT (distributed hash table)
+		\item<3-> ``Popularity of P2P networks stems from the principles of
+				 \textbf{anonymity and freedom}.'' \nocite{37_1698430}
+		\end{itemize}
+	\item<4-> Government, RIAA, MPAA: Use fake users to track
+		\begin{itemize}\setlength\itemsep{0.3em}
+		\item<4-> RIAA = Recording Industry Association of America
+		\item<4-> MPAA = Motion Picture Association of America
+		\end{itemize}
+	\end{itemize}
+	% Transcript: Letting copyright holders to change and integrate into the P2P sharing nature seems unrealistic in short term. So they chose to monitor users. 
+	% Transcript: Actually it turns out that monitoring users in P2P network is in some sense even easier than in client-server networks. A paper in 2010 shows that if you crawl the distributed hash table, which is a data structure in P2P networks, you can track nearly 8 million IP addresses. With these IP addresses, copyright holders can map them to users. 
+	% Transcript: This is ironic when considering the original design of P2P, which values users' anonymity and freedom in the network. 
+	% Transcript: Other research shows that the government and copyright holders are really tracking P2P users. Well, actually not copyright holders, but organizations like RIAA or MPAA. They create fake users on P2P networks to track other users. 
+\end{frame}
+
+\begin{frame}
+	\frametitle{Effect on ISP}
+	\begin{itemize}\setlength\itemsep{0.5em}
+	\item<1-> ISP: Internet Service Provider
+	\item<2-> Direct: asymmetric bandwidth
+	\item<3-> Indirect: Digital Millennium Copyright Act (DMCA)
+		\begin{itemize}\setlength\itemsep{0.3em}
+		\item<3-> Copyright owner \textbf{notify} ISP
+		\item<3-> ISP \textbf{take down} illegal content
+		\item<4-> Invest time and money
+		\item<5-> Universities
+		\begin{textblock}{2}[0,0](10,-3.5)
+			\pic{0.15}{assets/ucd_dmca.png} \nocite{26_UCDavisDMCA}
+		\end{textblock}
+		
+		\
+		
+		\
+		
+		\
+		
+		\end{itemize}
+	\end{itemize}
+	% Transcript: The introduction of P2P also brings two kinds of troubles to Internet Service Providers. 
+	% Transcript: The direct effect comes from the asymmetric bandwidth. In a client-server model, users usually download more than upload. So ISPs optimize their network and make download bandwidth larger. But P2P users usually acquire same download and upload bandwidth, which isn't friendly to ISPs' configuration. 
+	% Transcript: The indirect effect comes from the Digital Millennium Copyright Act. When copyright owners find infringing activities on an ISP's network, they can notify the ISP. The ISP has to take down the illegal content quickly, or it may suffer secondary liability of the infringement. 
+	% Transcript: That means, ISPs have to invest time and money on responding to the notices. But if you think about it, they have no control to the P2P technology, and their customer's use of this technology brings them trouble. 
+	% Transcript: This becomes more troublesome for universities, because universities act as ISPs for their students, and they are responsible for students' conduct. The law requires universities to notify students about this. For example, this is the announcement by UC Davis. 
+\end{frame}
+
+\begin{frame}
+	\frametitle{Leeching}
+	\begin{itemize}\setlength\itemsep{0.5em}
+	\item<1-> Leeching: downloading without uploading
+	\item<2-> Motivation
+		\begin{itemize}\setlength\itemsep{0.3em}
+		\item<2-> Save bandwidth
+		\item<3-> Avoid DMCA liability
+		\end{itemize}
+	\end{itemize}
+	% Transcript: Some users may be leeching, which means downloading from the P2P network without uploading. 
+	% Transcript: Some users do this in order to save their uploading bandwidth. This behavior is considered unethical by the community because it contradicts the concept of reciprocity in P2P. If no one is willing to upload the content to the network, then P2P is in no way better than client server. 
+	% Transcript: However, another possible motivation is to prevent DMCA liability. Users get in trouble with DMCA because they upload the pirated content to the network. If they only download the content, there will be no problems. So users have to make a decision between ethics and the law. 
+\end{frame}
+
+\begin{frame}
+	\frametitle{Xunlei's proprietary P2P network}
+	\begin{textblock}{2}[0,0](10,3)
+		\pic{1}{assets/Xunlei_Limited_logo.jpg}
+	\end{textblock}
+	\begin{itemize}\setlength\itemsep{0.5em}
+	\item<1-> Different than ``open'' design
+	\item<2-> Centralized control
+		\begin{itemize}\setlength\itemsep{0.3em}
+		\item<2-> Piracy control
+		\item<2-> Privacy
+		\end{itemize}
+	\item<3-> Weak encryption
+	\item<4-> Wrap other P2P networks
+	\end{itemize}
+	% Transcript: Though most P2P networks have an open design, Xunlei follows a different way. Xunlei is a P2P client designed by a Chinese company. 
+	% Transcript: It uses a proprietary network that has centralized control, which is usually avoided in P2P network design. Research shows that it may be good for piracy control, but can harm users' privacy with over surveillance. 
+	% Transcript: Xunlei also uses a weak encryption mechanism, which may allow hackers to track users' activities. 
+	% Transcript: People also find that Xunlei's network is trying to encapsulate other open P2P networks, which becomes an ethical question because Xunlei can benefit from just proxying the other networks. 
+\end{frame}
+
+\begin{frame}
+	\frametitle{A lot more to be discussed}
+	\begin{itemize}\setlength\itemsep{0.5em}
+	\item<2-> Spreading virus
+	\item<3-> Windows 10: P2P by default
+	\item<3-> ...
+	\end{itemize}
+	% Transcript: There are a lot more ethical problems created by P2P that can't be discussed in this 10-minute presentation. 
+	% Transcript: For example, P2P networks can easily spread virus, because everyone can share anything. 
+	% Transcript: Also, Microsoft Windows 10 turns on its P2P service updates by default, which create problem for local area network managers. 
+\end{frame}
+
+\section{EOF}
+
+\AddToShipoutPictureFG*{
+	\AtPageLowerLeft{
+		\put(\LenToUnit{0.05\paperwidth},\LenToUnit{0.26\paperheight}){
+			Thanks: \LaTeX, Beamer, Ti\textit{k}Z, \BibTeX, ImageMagick, 
+					ghostscript,
+		}
+		\put(\LenToUnit{0.163\paperwidth},\LenToUnit{0.18\paperheight}){
+			Inkscape, GIMP, FFmpeg, VLC media player, Audacity,
+		}
+		\put(\LenToUnit{0.163\paperwidth},\LenToUnit{0.1\paperheight}){
+			eSpeak, CSIF
+		}
+	}
+}
+
+\begin{frame}
+	\centerline{\fontsize{32}{32}\selectfont Thank you}
+	% Transcript: Thank you. 
+\end{frame}
+
+\begin{frame}
+	\frametitle{References}
+	% \AtNextBibliography{\tiny}
+	% \printbibliography[heading=none]
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\pic{0.38, page=2, trim={2.5cm 3cm 2.5cm 5cm}, clip}
+				{assets/20200507RoughRef.pdf}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\pic{0.38, page=3, trim={2.5cm 5.5cm 2.5cm 2.5cm}, clip}
+				{assets/20200507RoughRef.pdf}
+		\end{column}
+	\end{columns}
+	% Transcript: Here are the references for my paper and images used in this presentation. 
+\end{frame}
+
+% Words: anonymity, reciprocity, proprietary
+
+\newpage
+\end{document}
+
