@@ -1,0 +1,155 @@
+[Script Info]
+Title:Eric Li P2P Presentation
+Original Script:Eric Li
+Collisions:Normal
+PlayResX:704
+PlayResY:396
+Timer:100.0000
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, Outline, Alignment
+Style: Default, Arial, 16, &H00888888, &H00FFFFFF, 1, 2
+
+[Events]
+Format: Layer, Start, End, Style, Text
+Dialogue: 0,0:00:01.16,0:00:02.12,Default,Hi, I am Eric Li. 
+Dialogue: 0,0:00:03.05,0:00:06.12,Default,Let me show you the ethical problems in P2P architectures. 
+Dialogue: 0,0:00:08.74,0:00:11.69,Default,Suppose you want to share a file with a lot of Internet users.
+Dialogue: 0,0:00:12.42,0:00:14.59,Default,You may need to look for file sharing applications.
+Dialogue: 0,0:00:15.75,0:00:19.11,Default,Traditionally this kind of applications follow a client-server design. 
+Dialogue: 0,0:00:20.08,0:00:21.78,Default,There is one server in the network.
+Dialogue: 0,0:00:22.71,0:00:24.09,Default,Sometimes there are a few of them.
+Dialogue: 0,0:00:24.86,0:00:27.08,Default,And there are many clients it talks to. 
+Dialogue: 0,0:00:28.13,0:00:30.31,Default,However, this structure has problems.
+Dialogue: 0,0:00:31.20,0:00:34.28,Default,If the server is down or its Internet connection is broken,
+Dialogue: 0,0:00:34.96,0:00:37.11,Default,then the entire service can't work anymore.
+Dialogue: 0,0:00:38.16,0:00:40.14,Default,This is known as single point of failure. 
+Dialogue: 0,0:00:41.02,0:00:43.73,Default,Also, the server does not have infinite bandwidth.
+Dialogue: 0,0:00:44.83,0:00:47.78,Default,Say one thousand clients are downloading something at the same time,
+Dialogue: 0,0:00:48.59,0:00:50.27,Default,then the average speed will be slow
+Dialogue: 0,0:00:51.04,0:00:53.71,Default,because the server is the bottle neck of the network. 
+Dialogue: 0,0:00:55.61,0:00:59.29,Default,However, it is easy for application managers to manage its users,
+Dialogue: 0,0:01:00.14,0:01:03.90,Default,because all the information they need can be found in like server logs. 
+Dialogue: 0,0:01:06.81,0:01:09.60,Default,A new network architecture for sharing is Peer-to-Peer. 
+Dialogue: 0,0:01:10.53,0:01:13.24,Default,You can think of it as the clients in the client-server model 
+Dialogue: 0,0:01:13.53,0:01:14.46,Default,are talking to each others. 
+Dialogue: 0,0:01:15.67,0:01:18.05,Default,There is still some kind of server or service 
+Dialogue: 0,0:01:18.38,0:01:19.79,Default,for peers to find each other, 
+Dialogue: 0,0:01:20.68,0:01:23.47,Default,but the major traffic goes directly between peers. 
+Dialogue: 0,0:01:24.85,0:01:28.73,Default,P2P solves the problem of single point of failure in client server. 
+Dialogue: 0,0:01:29.74,0:01:32.53,Default,Suppose you are sharing a file with 100 users, 
+Dialogue: 0,0:01:33.22,0:01:36.21,Default,and at some time your Internet connection is gone. 
+Dialogue: 0,0:01:37.14,0:01:40.06,Default,But if you have sent the entire file's content out, 
+Dialogue: 0,0:01:40.82,0:01:42.04,Default,to different receivers, 
+Dialogue: 0,0:01:42.80,0:01:46.48,Default,then the receivers in P2P can reconstruct the original file. 
+Dialogue: 0,0:01:48.33,0:01:51.93,Default,This feature also makes P2P networks scalable. 
+Dialogue: 0,0:01:52.98,0:01:57.15,Default,This chart shows that if you need to send a file to a lot of users, 
+Dialogue: 0,0:01:57.88,0:02:02.41,Default,P2P networks spread it much faster than client-server networks. 
+Dialogue: 0,0:02:02.88,0:02:05.15,Default,Because the bottle neck on the sharer is gone. 
+Dialogue: 0,0:02:07.74,0:02:11.54,Default,The easiness to share files in P2P creates copyright problems 
+Dialogue: 0,0:02:12.31,0:02:15.50,Default,as users share infringing content in P2P networks. 
+Dialogue: 0,0:02:16.76,0:02:19.83,Default,A research in 2011 shows that 11 percent of 
+Dialogue: 0,0:02:20.03,0:02:22.54,Default,the Internet's traffic are infringing content 
+Dialogue: 0,0:02:22.87,0:02:25.62,Default,on a popular P2P network called BitTorrent. 
+Dialogue: 0,0:02:26.87,0:02:29.26,Default,Research on users' ethical reasoning shows that 
+Dialogue: 0,0:02:29.46,0:02:33.46,Default,they usually realize that infringement over P2P is an ethical issue. 
+Dialogue: 0,0:02:34.39,0:02:35.97,Default,However, they feel less guilty 
+Dialogue: 0,0:02:36.25,0:02:39.89,Default,if they pay some subscription fee to use the P2P system. 
+Dialogue: 0,0:02:41.63,0:02:44.58,Default,Their belief of consumer rights and reciprocity 
+Dialogue: 0,0:02:44.99,0:02:47.91,Default,further increases piracy in P2P systems. 
+Dialogue: 0,0:02:49.84,0:02:52.35,Default,When so many users share in a distributed system, 
+Dialogue: 0,0:02:52.96,0:02:55.36,Default,it becomes much more difficult to stop them 
+Dialogue: 0,0:02:55.93,0:02:58.36,Default,than illegal sharing in client-server. 
+Dialogue: 0,0:02:59.65,0:03:02.44,Default,Because in client-server you just need to take the server down. 
+Dialogue: 0,0:03:05.55,0:03:09.59,Default,The debate on how to stop infringing over P2P is polarized 
+Dialogue: 0,0:03:10.08,0:03:11.49,Default,and has been lasting for a long time. 
+Dialogue: 0,0:03:12.54,0:03:14.12,Default,People have thought of all kinds of ways. 
+Dialogue: 0,0:03:15.29,0:03:19.13,Default,One way copyright holders came up with is to ban the P2P technology 
+Dialogue: 0,0:03:19.74,0:03:21.48,Default,because it makes infringing so easy. 
+Dialogue: 0,0:03:22.57,0:03:25.08,Default,However, is it worthy to ban a technology just 
+Dialogue: 0,0:03:25.29,0:03:28.00,Default,because its potential damage to the copyright? 
+Dialogue: 0,0:03:28.85,0:03:31.11,Default,It turns out that similar cases have happened 
+Dialogue: 0,0:03:31.52,0:03:34.03,Default,when Sony sold a video recorder called Betamax 
+Dialogue: 0,0:03:34.47,0:03:36.29,Default,which can be used to pirate videos. 
+Dialogue: 0,0:03:37.50,0:03:40.17,Default,The court decided that the technology shouldn't be banned, 
+Dialogue: 0,0:03:40.82,0:03:43.89,Default,because it has large potential uses and commercial value. 
+Dialogue: 0,0:03:44.98,0:03:47.65,Default,However, it doesn't mean that Sony can misbehave 
+Dialogue: 0,0:03:48.02,0:03:51.49,Default,like by advertising about the potential infringing use. 
+Dialogue: 0,0:03:52.51,0:03:54.85,Default,Later this is known as the Sony doctrine. 
+Dialogue: 0,0:03:56.02,0:03:58.88,Default,Applying this analysis, the P2P technology 
+Dialogue: 0,0:03:59.25,0:04:03.33,Default,also shouldn't be banned because it has powerful non-infringing uses. 
+Dialogue: 0,0:04:05.43,0:04:07.05,Default,People have also proposed other ways. 
+Dialogue: 0,0:04:07.86,0:04:10.49,Default,Some people think there should be harsh penalties for pirates 
+Dialogue: 0,0:04:11.09,0:04:12.87,Default,like cutting the Internet service. 
+Dialogue: 0,0:04:13.84,0:04:16.71,Default,They are kind of more on the copyright holder's side. 
+Dialogue: 0,0:04:17.89,0:04:20.39,Default,Some psychological researchers think we should 
+Dialogue: 0,0:04:20.52,0:04:23.22,Default,educate the customers about the harm of infringement. 
+Dialogue: 0,0:04:24.24,0:04:27.23,Default,They also propose that copyright holders should make use of 
+Dialogue: 0,0:04:27.39,0:04:31.47,Default,the new model proposed by P2P and change their business model. 
+Dialogue: 0,0:04:34.55,0:04:36.69,Default,Letting copyright holders to change and integrate 
+Dialogue: 0,0:04:36.89,0:04:40.69,Default,into the P2P sharing nature seems unrealistic in short term. 
+Dialogue: 0,0:04:41.38,0:04:43.08,Default,So they chose to monitor users. 
+Dialogue: 0,0:04:44.17,0:04:47.48,Default,Actually it turns out that monitoring users in P2P network 
+Dialogue: 0,0:04:47.85,0:04:50.95,Default,is in some sense even easier than in client-server networks. 
+Dialogue: 0,0:04:52.00,0:04:56.77,Default,A paper in 2010 shows that if you crawl the distributed hash table, 
+Dialogue: 0,0:04:57.33,0:04:59.52,Default,which is a data structure in P2P networks, 
+Dialogue: 0,0:05:00.29,0:05:02.55,Default,you can track nearly 8 million IP addresses. 
+Dialogue: 0,0:05:03.77,0:05:07.77,Default,With these IP addresses, copyright holders can map them to users. 
+Dialogue: 0,0:05:09.03,0:05:12.67,Default,This is ironic when considering the original design of P2P, 
+Dialogue: 0,0:05:13.35,0:05:16.39,Default,which values users' anonymity and freedom in the network. 
+Dialogue: 0,0:05:18.09,0:05:21.04,Default,Other research shows that the government and copyright holders 
+Dialogue: 0,0:05:21.32,0:05:23.02,Default,are really tracking P2P users. 
+Dialogue: 0,0:05:24.19,0:05:29.09,Default,Well, actually not copyright holders, but organizations like RIAA or MPAA. 
+Dialogue: 0,0:05:30.23,0:05:34.79,Default,They create fake users on P2P networks to track other users. 
+Dialogue: 0,0:05:38.35,0:05:41.17,Default,The introduction of P2P also brings two kinds of troubles 
+Dialogue: 0,0:05:41.66,0:05:43.03,Default,to Internet Service Providers. 
+Dialogue: 0,0:05:44.25,0:05:47.16,Default,The direct effect comes from the asymmetric bandwidth. 
+Dialogue: 0,0:05:48.13,0:05:51.61,Default,In a client-server model, users usually download more than upload. 
+Dialogue: 0,0:05:52.38,0:05:56.59,Default,So ISPs optimize their network and make download bandwidth larger. 
+Dialogue: 0,0:05:57.76,0:06:01.85,Default,But P2P users usually acquire same download and upload bandwidth, 
+Dialogue: 0,0:06:02.54,0:06:04.84,Default,which isn't friendly to ISPs' configuration. 
+Dialogue: 0,0:06:06.94,0:06:10.42,Default,The indirect effect comes from the Digital Millennium Copyright Act. 
+Dialogue: 0,0:06:11.39,0:06:15.79,Default,When copyright owners find infringing activities on an ISP's network, 
+Dialogue: 0,0:06:16.56,0:06:17.94,Default,they can notify the ISP. 
+Dialogue: 0,0:06:19.52,0:06:22.63,Default,The ISP has to take down the illegal content quickly, 
+Dialogue: 0,0:06:23.24,0:06:26.60,Default,or it may suffer secondary liability of the infringement. 
+Dialogue: 0,0:06:27.57,0:06:32.71,Default,That means, ISPs have to invest time and money on responding to the notices. 
+Dialogue: 0,0:06:33.72,0:06:37.77,Default,But if you think about it, they have no control to the P2P technology, 
+Dialogue: 0,0:06:38.33,0:06:41.81,Default,and their customer's use of this technology brings them trouble. 
+Dialogue: 0,0:06:43.79,0:06:46.26,Default,This becomes more troublesome for universities, 
+Dialogue: 0,0:06:47.22,0:06:50.53,Default,because universities act as ISPs for their students, 
+Dialogue: 0,0:06:51.22,0:06:53.20,Default,and they are responsible for students' conduct. 
+Dialogue: 0,0:06:54.46,0:06:57.86,Default,The law requires universities to notify students about this. 
+Dialogue: 0,0:06:58.59,0:07:01.62,Default,For example, this is the announcement by UC Davis. 
+Dialogue: 0,0:07:05.70,0:07:06.79,Default,Some users may be leeching, 
+Dialogue: 0,0:07:07.44,0:07:10.84,Default,which means downloading from the P2P network without uploading. 
+Dialogue: 0,0:07:12.09,0:07:15.41,Default,Some users do this in order to save their uploading bandwidth. 
+Dialogue: 0,0:07:16.42,0:07:19.46,Default,This behavior is considered unethical by the community 
+Dialogue: 0,0:07:20.10,0:07:23.99,Default,because it contradicts the concept of reciprocity in P2P. 
+Dialogue: 0,0:07:25.41,0:07:28.31,Default,If no one is willing to upload the content to the network, 
+Dialogue: 0,0:07:29.08,0:07:31.96,Default,then P2P is in no way better than client server. 
+Dialogue: 0,0:07:33.01,0:07:37.21,Default,However, another possible motivation is to prevent DMCA liability. 
+Dialogue: 0,0:07:38.43,0:07:40.57,Default,Users get in trouble with DMCA 
+Dialogue: 0,0:07:40.86,0:07:43.65,Default,because they upload the pirated content to the network. 
+Dialogue: 0,0:07:44.86,0:07:47.61,Default,If they only download the content, there will be no problems. 
+Dialogue: 0,0:07:48.74,0:07:52.31,Default,So users have to make a decision between ethics and the law. 
+Dialogue: 0,0:07:55.21,0:08:00.10,Default,Though most P2P networks have an open design, Xunlei follows a different way. 
+Dialogue: 0,0:08:01.35,0:08:04.14,Default,Xunlei is a P2P client designed by a Chinese company. 
+Dialogue: 0,0:08:05.03,0:08:08.75,Default,It uses a proprietary network that has centralized control, 
+Dialogue: 0,0:08:09.52,0:08:12.03,Default,which is usually avoided in P2P network design. 
+Dialogue: 0,0:08:13.57,0:08:16.71,Default,Research shows that it may be good for piracy control, 
+Dialogue: 0,0:08:17.48,0:08:20.51,Default,but can harm users' privacy with over surveillance. 
+Dialogue: 0,0:08:22.46,0:08:25.21,Default,Xunlei also uses a weak encryption mechanism, 
+Dialogue: 0,0:08:25.85,0:08:28.65,Default,which may allow hackers to track users' activities. 
+Dialogue: 0,0:08:30.95,0:08:33.46,Default,People also find that Xunlei's network is trying to 
+Dialogue: 0,0:08:33.66,0:08:36.17,Default,encapsulate other open P2P networks, 
+Dialogue: 0,0:08:36.98,0:08:40.41,Default,which becomes an ethical question because Xunlei can benefit 
+Dialogue: 0,0:08:40.78,0:08:42.91,Default,from just proxying the other networks. 
+Dialogue: 0,0:08:46.84,0:08:50.03,Default,There are a lot more ethical problems created by P2P 
+Dialogue: 0,0:08:50.39,0:08:53.38,Default,that can't be discussed in this 10-minute presentation. 
+Dialogue: 0,0:08:54.43,0:08:57.79,Default,For example, P2P networks can easily spread virus, 
+Dialogue: 0,0:08:58.23,0:08:59.77,Default,because everyone can share anything. 
+Dialogue: 0,0:09:00.82,0:09:05.96,Default,Also, Microsoft Windows 10 turns on its P2P service updates by default, 
+Dialogue: 0,0:09:06.85,0:09:10.01,Default,which create problem for local area network managers. 
+Dialogue: 0,0:09:12.51,0:09:14.49,Default,Thank you. 
+Dialogue: 0,0:09:20.35,0:09:25.53,Default,Here are the references for my paper and images used in this presentation. 
