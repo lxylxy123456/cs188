@@ -12,6 +12,7 @@ If you have GPU, you can accelerate video encoding:
 
 ### License
 
+Unless otherwise specified, the content of this repo is licensed under
 [https://creativecommons.org/licenses/by-nc-sa/4.0/](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ### Project structure
