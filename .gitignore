@@ -1,2 +1,7 @@
-build
 __pycache__
+/build/*
+!/build/20200520Presentation.pdf
+!/build/20200520Presentation.ass
+!/build/20200520Presentation.mp4
+!/build/20200520Presentation_sub.mp4
+!/build/png-*.png
