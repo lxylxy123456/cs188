@@ -12,7 +12,7 @@ If you have GPU, you can accelerate video encoding:
 
 ### Final draft
 
-Generate final draft of paper:
+Generate final draft of the paper:
 
 `make build/20200526TermPaper.pdf`
 
@@ -24,7 +24,8 @@ Unless otherwise specified, the content of this repo is licensed under
 ### Project structure
 
 #### Source files
-* `20200520Presentation.tex`: presentation slides
+* `20200520Presentation.tex`: presentation slides source code
+* `20200526TermPaper.pdf`: final draft source code
 * `p2p.bib`: list of references
 * `20200508_2244.mp3`: Audio file
 * `20200508_2244.txt`: Transcript, without time info
@@ -38,5 +39,6 @@ Unless otherwise specified, the content of this repo is licensed under
 * `build/20200520Presentation.ass`: subtitle file
 * `build/20200520Presentation.mp4`: sresentation video
 	* `build/20200520Presentation_sub.mp4`: subtitle drew on video
+* `build/20200526TermPaper.pdf`: final draft in pdf
 * `clean`: remove `./build/`
 
