@@ -1,5 +1,13 @@
 BUILD_DIR=./build
 
+build/20200526TermPaper.pdf: 20200526TermPaper.tex p2p.bib
+	mkdir -p $(BUILD_DIR)
+	pdflatex -output-directory $(BUILD_DIR) 20200526TermPaper.tex
+	cp p2p.bib $(BUILD_DIR)
+	cd $(BUILD_DIR); bibtex 20200526TermPaper.aux
+	pdflatex -output-directory $(BUILD_DIR) 20200526TermPaper.tex
+	pdflatex -output-directory $(BUILD_DIR) 20200526TermPaper.tex
+
 build/20200520Presentation.pdf: 20200520Presentation.tex p2p.bib
 	mkdir -p $(BUILD_DIR)
 	pdflatex -output-directory $(BUILD_DIR) 20200520Presentation.tex

@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+% https://www.overleaf.com/latex/templates/mla-paper/gygfsknyjwqn
+
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage[leftmargin = 1in, rightmargin = 0in, vskip = 0in]{quoting}
+\usepackage{microtype}
+
+% \usepackage[style=mla, backend=bibtex]{biblatex}
+\usepackage[backend=bibtex, sorting=none]{biblatex}
+\addbibresource{p2p.bib}
+
+\newcommand{\blockquotespacing}{\doublespaced}
+
+\pagestyle{myheadings}
+\markright{\hfill \emph{Li }}
+
+%XeLaTeX: Times New Roman
+%\usepackage{fontspec}
+%\setmainfont[Numbers={Proportional}, Ligatures={TeX, Rare}]{Times New %Roman}
+		
+%pdfLaTeX: TeX Gyre Termes
+\usepackage{tgtermes}
+\usepackage[T1]{fontenc}
+
+%Defining the blockquote Environment
+\newcommand{\prose}{.25in}
+\newcommand{\poetry}{0in}
+\newcommand{\singlespaced}{\setstretch{1}\vspace{\baselineskip}}
+\newcommand{\doublespaced}{}
+\newenvironment{blockquote}[1][\prose]{\setlength{\parindent}{#1}\begin{quoting}\blockquotespacing}{\end{quoting}}
+
+\usepackage{verbatim}
+\usepackage{lineno}
+% \linenumbers
+
+\begin{document}
+\setstretch{2}
+\raggedright
+
+Eric Li \\ Professor Eiselt \\ ECS 188 001 \\ May 26, 2020 \\ Word count: 1979
+% TODO: add / update word count
+\setlength{\parindent}{.5in}
+\centerline{Ethical problems in P2P architectures}
+
+% BEGIN_WC
+Peer-to-Peer (P2P) is a famous computer network architecture in contrast to the client-server architecture. Instead of relying on an always-on server to handle all requests, P2P applications communicate with other application users, which better utilizes the network's connectivity and alleviates burden on the server's traffic, increasing the overall speed \cite{01_KuroseJamesF2013Cn:a}. P2P architecture became popular with a file sharing system called Napster in 1999 \cite{60_napster}. After a few decades' development, P2P now has popular applications in file sharing, software distributing, and anonymous browsing. However, this powerful technology has created ethical problems. Since P2P allows users to share files easily, people share more and more illegal data like pirated music and movies with this technology. Annoyed about the copyright infringement, the copyright holders try to monitor the sharing of pirated content, which creates concerns on P2P users' privacy. P2P also creates minor issues like leeching - utilizing P2P network's resources without reciprocating.
+% https://www.wired.com/2013/04/napster/
+% https://www.theguardian.com/music/2013/feb/24/napster-music-free-file-sharing
+
+When sharing files, P2P systems have a large advantage compared to the traditional client-server systems. It is self-scalable when multiple peers are trying to download from a single server: the server's bandwidth is no longer the bottleneck of the system because the Internet connections between peers can be fully utilized. Another feature is that if the server goes down during the transmission, the remaining peers can possibly reconstruct the transmitted file using what they have already received \cite{01_KuroseJamesF2013Cn:a}. However, this powerful downloading capability makes P2P notorious for downloading pirated content. A technical report in 2011 estimates that 11\% of all the Internet's traffic is infringing content on BitTorrent, a popular P2P protocol used for file sharing \cite{53_house2011technical}. In order to understand this trend, there has been studies on the ethical choices people make when deciding whether to share infringed content through a P2P network. People realize the fact that downloading infringed content is an ethical issue. However, if they pay a subscription fee to use the P2P network, they feel less guilty or do not think they are pirating \cite{18_article}. Peoples' beliefs in consumer rights let them download infringed content in P2P networks. Their beliefs in reciprocity let them decide to further share what they have downloaded to others \cite{17_article}. 
+
+The structure of the P2P file sharing network makes it difficult to stop the infringement. Unlike pirating hard-copied books or distributing the infringed content in a client-server manner, which can be stopped simply by cutting the sharer off, P2P networks are difficult to stop because essentially every user is a sharer. Copyright owners tried to protect their content by banning P2P technology because a blanket ban would be much easier to implement than tracking down and suing infringing individuals \cite{14_lemley2005quick}. However, is it worthwhile to ban a technology just because of its potential damage to the copyright law? This move was not unprecedented as copyright owners tried banning the Sony Betamax recorder in 1984 because the home video system provided a way for people to make not only home videos but also copies of copyrighted materials \cite{13_LeeEdward2005TEoI}. However, the Supreme Court decided that Sony was not behaving illegally when developing, selling, and advertising the new video recorder. This ruling has since become known as the Sony Doctrine, and applies to developing and selling technologies that have large potential uses and commercial value. The judges' reasoning was that if the law does not provide such a safe harbor for technology developers, there will be a chilling effect on innovation. However, this ruling does not provide protections if the technology designers actively promote using their technologies for infringing on copyrights. The P2P technology, under this analysis, is also legal because the technology is neutral and has significance in non-infringing uses \cite{13_LeeEdward2005TEoI}. 
+
+To still stop the infringement without taking P2P systems down, copyright holders and the research community have thought of different ways and result in a polarized debate. Some people focus on building a system that resolves P2P copyright disputes \cite{14_lemley2005quick}. Their main focus is to let each side provide evidence so that clear cases can be resolved easily. They propose that for repeated violations, there should be some harsh penalties like denial of Internet service. However, people on the other side have different opinions. They believe copyright owners should educate the customers about the immorality of piracy and persuade them to decline piracy, instead of simply enforcing the law \cite{18_article}. They also propose that copyright owners should change their business models to make use of the P2P technology \cite{17_article}. Researchers in the middle think P2P architecture decreases the distance between the authors and the public and facilitates the distribution of information in a desired way. Some actions like infringing should be considered immoral, but copyright holders should consider changing their way of sharing and protecting their copyright \cite{12_10.2307/40863687}. 
+% First, P2P architecture optimizes the flow of information and allows anyone to be publishers. In traditional publishing, instead, there is larger distance between the authors and the public. 
+% They mention that traditionally the process of publishing requires interaction with physical objects and takes a long time, and P2P technology makes this long route short. Second, they mention that 
+% drop: [06] [25] [27] [31]; manage: [12] [13] [14]
+% company should: [17] (small fee) [18] (rationalize, inducement, softer approach)
+
+% --------------------------------------------------------------------------------
+
+Letting copyright holders change and integrate into the P2P sharing nature seems unrealistic in the short term. So they implement different ways to stop infringement. To download a large file from BitTorrent, users need to first obtain a small torrent file from another website in order to find the large file in the network. Then they need to connect to tracker servers to find peers. Copyright owners ask search engines like Google to take down URLs that host torrent files for pirated content. They also try to take down trackers for infringing content so that users cannot find peers for downloading the file. Apart from taking down those servers, copyright owners directly monitor P2P users, which raises privacy concerns. Though P2P architecture becomes popular because of its ``principles of anonymity and freedom,'' it turns out that in some ways monitoring users in P2P networks is even easier than in client-server networks \cite{37_1698430}. Wolchok et al. showed in 2010 that by crawling DHT, a data structure used by BitTorrent for tracking, they can track nearly 8 million IP addresses' downloads \cite{40_wolchok2010crawling}. There are also websites that allow users to lookup download records of any IP address \cite{34_FrenchPresident, 35_YourTorrent, 36_YouHaveDownloaded}. For copyright owners, an IP address can be mapped to an Internet user through a subpoena to the IP address' Internet Service Provider (ISP), though there may be some false positives caused by sharing of one IP address between multiple users \cite{14_lemley2005quick}. So have governments or copyright holders actually monitored P2P users' activities? An experiment in 2007 shows that the government and trade associations like Recording Industry Association of America (RIAA) and Motion Picture Association of America (MPAA) are creating fake users in P2P networks for surveillance \cite{48_banerjee2007p2p}. RIAA and MPAA are committed to protect the copyright for artists, but they do not address the problem of P2P users' privacy \cite{56_RIAA, 57_MPAA}. As a way to protest, P2P communities have detected these fake IP addresses and published blocklists for P2P users. The 2007 experiment shows that if P2P users ignore the blocklist, they are almost always tracked by the government and the organizations. Now, there are still active research in P2P monitorization and anonymization using all kinds of techniques. 
+% [07] [12] [33] [37] [38] [39]
+
+Due to the distributed nature of the P2P structure and the difficulties in administration, this new technology even directly and indirectly brings troubles to ISPs. In client server structure, users usually have more downloading traffic than uploading, but for P2P applications, downloading and uploading traffic are ideally the same. This contradicts many ISPs' design of asymmetric bandwidth, which is the direct trouble for ISPs \cite{01_KuroseJamesF2013Cn:a}. The indirect trouble comes from the Digital Millennium Copyright Act (DMCA) enacted in 1998 \cite{55_DMCA}. The intention of this act is to prevent online service providers (OSPs) from being liable for users' infringing behavior. However, this safe harbor for OSPs requires them to follow the ``notice and take down'' policy. For an ISP, that means when an infringement notice is received, the ISP has to quickly remove the source of infringement from the service. Many ISPs complain about this policy because they have to invest time and money on processing the notices \cite{30_HighEduAndDMCA}. 
+% TODO: [15]?
+Universities, who provide Internet service to their students, have to treat this problem more seriously. Unlike other ISPs, most Internet users in universities are students, so the universities have to regulate the students' conduct \cite{30_HighEduAndDMCA}. The Higher Education Opportunity Act in 2008 requires universities to notify students annually about their responsibilities on preventing infringement \cite{29_HighEduOppAct}, and such kinds of notices can be easily found on many universities' websites \cite{08_website:southtexascollege, 26_UCDavisDMCA, 28_CMU_DMCA}. As a disciplinary action, universities remove students in violation of DMCA from the campus network for a short period of time. In UC Davis, for example, it is 14 days. However, a survey shows that many universities have not registered an agent for processing the infringement notices, and the agents still need to properly understand the law related to DMCA \cite{30_HighEduAndDMCA}. Thus, P2P is bringing ISPs and universities troubles even though they have no direct relationship with the technology.
+
+The idea of P2P sharing is that users can download what they need from the network, and in return, they should voluntarily provide what they have to other users, forming a reciprocal model. However, due to the open nature of the P2P protocol, users may configure their P2P clients so that they upload little or none to the network while still downloading the files successfully, known as leeching \cite{54_d2014bittorrent}. Some people's motivation for leeching is to save their bandwidth, and most people believe it breaks the P2P etiquette and is an unethical behavior% \cite{16_TorrentingEthics}
+. However, others have a different motivation for leeching, which comes from the ironic fact about the enforcement of DMCA that only uploaders are liable for the infringement, not the downloaders. Normally P2P users are accused of DMCA violation because by the default configuration of P2P agents, they upload the infringed content they have downloaded back to the P2P network for other peers. If a user leeches by downloading the pirated content using a P2P network without uploading, he or she will not be accused of DMCA violation. It becomes another ethical question of whether to leech if the intention of leeching is to prevent the liability for DMCA violations (not considering whether pirating is ethical) \cite{24_P2PLeecher}. 
+% [16] [20] [24] [54]
+
+Another ethical concern is about Xunlei's development on top of P2P networks that does not follow an open nature and the idea that P2P systems ``must not have centralized control'' \cite{07_7907024}. Xunlei is a popular P2P application that operates on a proprietary network that shows centralized control. Worrying about the effect of centralized control on performance, privacy, and security, researchers try to reverse engineer Xunlei's network and compare its behavior to open P2P implementations. Their research shows that some requests Xunlei clients make are weakly encrypted, which allows attackers to see what other people download. It also shows that Xunlei's network is trying to ``wrap'' the other popular P2P networks. Though this practice may possibly make filtering infringement easier, it can easily monitor too many users' activities and harm privacy. 
+
+P2P is an influential technology in computer networks for applications like file sharing. But as Neil Postman mentions in his 1998 speech, this powerful technology does not distribute its advantage equally to all people \cite{59_postman1998five}. It allows consumers to access pirated content easier, thus paying less to watch movies or listen to music. But it brings copyright holders and ISPs a nightmare. Copyright holders have to think of different ways to stop piracy on the P2P network, and ISPs have to invest time and money to deal with infringement notices. Moreover, as Postman mentions, P2P also has trade-offs on its users. Though they can download content easier, they have to share their bandwidth and may be monitored by the government and copyright holders. 
+% But it brings people into trouble when used in practice. It makes sharing infringed contents easier and difficult to control, which creates a protracted debate on how to stop the piracy. Even ``innocent third parties'' like ISPs get into trouble and have to put in time and money to process all kinds of infringement notices. 
+P2P also creates problems like leeching and construction of proprietary networks on top of it. There are more problems to be discussed, like the distribution of software updates over P2P by default and the distribution of malicious files. Hopefully ethics can guide people to reach a solution to those problems in the future.
+% END_WC
+
+\newpage
+\centerline{References}
+\printbibliography[heading=none]
+\end{document}
+
