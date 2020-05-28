@@ -12,7 +12,9 @@ If you have GPU, you can accelerate video encoding:
 
 ### Final draft
 
-(In progress)
+Generate final draft of paper:
+
+`make build/20200526TermPaper.pdf`
 
 ### License
 
