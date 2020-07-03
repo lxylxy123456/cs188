@@ -21,6 +21,9 @@ Generate final draft of the paper:
 Unless otherwise specified, the content of this repo is licensed under
 [https://creativecommons.org/licenses/by-nc-sa/4.0/](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+### Presentation Video on Youtube
+[![Youtube Presentation Video](http://img.youtube.com/vi/vFygLeyNd1o/0.jpg)](http://www.youtube.com/watch?v=vFygLeyNd1o)
+
 ### Project structure
 
 #### Source files
